@@ -74,7 +74,7 @@
   text-align: center;
   margin: initial;
   font-size: 1.8rem;
-  text-decoration: underline;
+ 
   height: max-content;
   margin-top: auto;
 
@@ -86,6 +86,11 @@
   .pink {
     color: #D5286F;
     font-weight: 700;
+  }
+
+  strong {
+    font-weight: 800;
+     text-decoration: underline;
   }
 }
 
@@ -180,7 +185,6 @@
   }
 
   .hero__review {
-   
     justify-content: flex-start;
     align-items: flex-start;
   

@@ -1,0 +1,217 @@
+.about-hydroxy {
+  margin-top: 8rem;
+}
+
+.about-hydroxy__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-hydroxy-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+
+  h2 {
+    margin: initial;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+}
+
+.about-hydroxy__body {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3rem;
+}
+
+.about-hydroxy__content {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3rem;
+}
+
+.about-hydroxy__content-description {
+  margin: initial;
+  order: 2;
+}
+
+.about-hydroxy__list {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2rem;
+  margin: initial;
+  padding: initial;
+  list-style: none;
+  order: 3;
+}
+
+.about-hydroxy__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  span {
+   display: flex;
+   max-width: 5rem;
+
+   img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+  }
+
+  p {
+    margin: initial;
+    font-size: 1.5rem;
+    line-height: 166%;
+    color: #000;
+  }
+}
+
+.about-hydroxy__image {
+  width: calc(100% + 3rem);
+  margin-left: -1.5rem;
+  display: flex;
+  height: max-content;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.about-hydroxy__link {
+  order: 1;
+  display: flex;
+  background-color: #379AC9;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  min-height: 5rem;
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: initial;
+  transition: background-color .3s linear;
+}
+
+@media screen and (min-width: 575px) {
+  .about-hydroxy-title {
+    h2 {
+      font-size: 3.6rem;
+    }
+  }
+
+  .about-hydroxy__image {
+    width: 100%;
+    margin-left: initial;
+    max-width: 54rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      border-radius: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .about-hydroxy {
+    margin-top: 15rem;
+  }
+
+  .about-hydroxy__body {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .about-hydroxy-title {
+    flex-direction: row;
+
+    h2 {
+      font-size: 4.2rem;
+      max-width: 73rem;
+    }
+  }
+
+  .about-hydroxy__content {
+    flex-direction: column;
+  }
+
+  .about-hydroxy__content-description {
+    order: initial;
+  }
+
+  .about-hydroxy__list {
+    order: initial;
+  }
+
+  .about-hydroxy__link {
+    order: initial;
+  }
+
+  .about-hydroxy__link {
+    margin-left: initial;
+  }
+
+  .about-hydroxy__image {
+    margin-left: initial;
+    margin-right: initial;
+    flex-shrink: 0;
+    max-width: 46rem;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .about-hydroxy {
+    margin-top: 20rem;
+  }
+
+
+  .about-hydroxy__image {
+    max-width: 57rem;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .about-hydroxy {
+    margin-top: 25rem;
+  }
+
+  .about-hydroxy-title {
+    h2 {
+      font-size: 6.4rem;
+      max-width: 105rem;
+    }
+  }
+
+  .about-hydroxy__wrapper {
+    gap: 5rem;
+  }
+
+  .about-hydroxy__content-description {
+    font-size: 1.8rem;
+    line-height: 166%;
+  }
+
+  .about-hydroxy__item {
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  .about-hydroxy__image {
+    max-width: 65rem;
+  }
+}
