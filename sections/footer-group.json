@@ -14,7 +14,7 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "link_list_bYRHqR": {
+        "link_list_EzTbdc": {
           "type": "link_list",
           "settings": {
             "heading": "",
@@ -23,7 +23,7 @@
         }
       },
       "block_order": [
-        "link_list_bYRHqR"
+        "link_list_EzTbdc"
       ],
       "settings": {
         "color_scheme": "scheme-1",
