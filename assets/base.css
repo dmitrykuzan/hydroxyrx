@@ -124,6 +124,27 @@ html {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  src: url("RobotoCondensed-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  src: url("RobotoCondensed-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Italic";
+  src: url("RobotoCondensed-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* stars */
 
 .melatonic-rating-stars {

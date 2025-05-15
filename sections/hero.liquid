@@ -4,12 +4,13 @@
   <div class="hero__wrapper">
     <div class="hero__content">
       <div class="hero__text">
-        <h1 class="hero__title section-title"><span>#1</span> Trusted Melatonin Hair Growth Solution</h1>
+        <h1 class="hero__title section-title">Discover Premium 7-0H</h1>
+        <h2 class="hero__subtitle">HYDROXY<span>Rx</span></h2>
 
         {% for block in section.blocks %}
           {% if block.type == 'product' and block.settings.product %}
             {% assign product = block.settings.product %}
-            <a class="hero__product-link melatonic-btn-hover" href="{{ product.url }}">Boost hair growth</a>
+            <a class="hero__product-link" href="{{ product.url }}">Shop now</a>
           {% endif %}
         {% endfor %}
       </div>
@@ -46,8 +47,13 @@
       </div>
     </div>
 
-    <div class="hero__image">
-      <img src="{{ 'hydroxy-hero.png' | asset_url }}" width="740" height="740" alt="HydroxyRx Smile Logotype">
+    <div class="hero__image-wrapper">
+      <div class="hero__image">
+        <img src="{{ 'hydroxy-hero.png' | asset_url }}" width="740" height="740" alt="HydroxyRx Smile Logotype">
+      </div>
+      <h3 class="hero__image-text">
+        <span class="blue">Safety </span> and <span class="pink">Addiction</span> Potential
+      </h3>
     </div>
   </div>
 </section>
