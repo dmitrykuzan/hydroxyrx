@@ -82,10 +82,10 @@
       "name": "Video Review Slider",
       "settings": {}
     },
-    "hero_Njxirp": {
+    "hero_m8ahrQ": {
       "type": "hero",
       "blocks": {
-        "product_EixwPt": {
+        "product_RUCbgN": {
           "type": "product",
           "settings": {
             "product": ""
@@ -93,7 +93,7 @@
         }
       },
       "block_order": [
-        "product_EixwPt"
+        "product_RUCbgN"
       ],
       "name": "Hero",
       "settings": {}
@@ -101,7 +101,7 @@
   },
   "order": [
     "image_banner",
-    "hero_Njxirp",
+    "hero_m8ahrQ",
     "video_slider_6Fhz9q"
   ]
 }
