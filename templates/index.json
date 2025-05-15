@@ -49,6 +49,22 @@
         "show_text_below": false
       }
     },
+    "hero_aBgLWt": {
+      "type": "hero",
+      "blocks": {
+        "product_BkBiiX": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_BkBiiX"
+      ],
+      "name": "Hero",
+      "settings": {}
+    },
     "video_slider_6Fhz9q": {
       "type": "video-slider",
       "blocks": {
@@ -82,26 +98,16 @@
       "name": "Video Review Slider",
       "settings": {}
     },
-    "hero_aBgLWt": {
-      "type": "hero",
-      "blocks": {
-        "product_BkBiiX": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "product_BkBiiX"
-      ],
-      "name": "Hero",
+    "about_hydroxy_eTPMJ6": {
+      "type": "about-hydroxy",
+      "name": "About Hydroxy",
       "settings": {}
     }
   },
   "order": [
     "image_banner",
     "hero_aBgLWt",
+    "about_hydroxy_eTPMJ6",
     "video_slider_6Fhz9q"
   ]
 }
