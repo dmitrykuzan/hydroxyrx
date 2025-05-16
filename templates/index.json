@@ -65,6 +65,11 @@
       "name": "Hero",
       "settings": {}
     },
+    "about_hydroxy_eTPMJ6": {
+      "type": "about-hydroxy",
+      "name": "About Hydroxy",
+      "settings": {}
+    },
     "video_slider_6Fhz9q": {
       "type": "video-slider",
       "blocks": {
@@ -98,9 +103,9 @@
       "name": "Video Review Slider",
       "settings": {}
     },
-    "about_hydroxy_eTPMJ6": {
-      "type": "about-hydroxy",
-      "name": "About Hydroxy",
+    "ticker_CECxQX": {
+      "type": "ticker",
+      "name": "Ticker Text",
       "settings": {}
     }
   },
@@ -108,6 +113,7 @@
     "image_banner",
     "hero_aBgLWt",
     "about_hydroxy_eTPMJ6",
+    "ticker_CECxQX",
     "video_slider_6Fhz9q"
   ]
 }
