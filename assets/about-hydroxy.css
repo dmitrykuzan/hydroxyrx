@@ -131,6 +131,10 @@
     }
   }
 
+  .about-hydroxy-logo {
+    padding-top: 1.5rem;
+  }
+
   .about-hydroxy__content {
     flex-direction: column;
   }
@@ -180,6 +184,10 @@
       font-size: 6.4rem;
       max-width: 105rem;
     }
+  }
+
+   .about-hydroxy-logo {
+    padding-top: 2rem;
   }
 
   .about-hydroxy__wrapper {
