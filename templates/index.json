@@ -156,6 +156,23 @@
       ],
       "name": "Video Review Slider",
       "settings": {}
+    },
+    "faq_with_text_iz9ydH": {
+      "type": "faq-with-text",
+      "blocks": {
+        "faq_item_fAEJYh": {
+          "type": "faq_item",
+          "settings": {
+            "title": "What Are Alkaloids?",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_fAEJYh"
+      ],
+      "name": "FAQ Section (with text)",
+      "settings": {}
     }
   },
   "order": [
@@ -164,6 +181,7 @@
     "about_hydroxy_eTPMJ6",
     "faq_with_image_9bCUDm",
     "ticker_CECxQX",
-    "video_slider_6Fhz9q"
+    "video_slider_6Fhz9q",
+    "faq_with_text_iz9ydH"
   ]
 }
