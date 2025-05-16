@@ -20,6 +20,7 @@
 .hero__subtitle {
   margin: initial;
   text-align: center;
+  letter-spacing: -2px;
   font-size: 4.8rem;
   font-family: 'RobotoCondensed-Bold';
   font-weight: 700;
@@ -96,22 +97,8 @@
 
 .hero__product-link {
   margin-top: 2rem;
-  display: flex;
-  background-color: #379AC9;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-  min-height: 5rem;
-  max-width: 35rem;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  border-radius: 1rem;
-  font-size: 1.8rem;
-  font-weight: 500;
-  text-decoration: initial;
-  transition: background-color .3s linear;
 }
 
 .hero__review {
@@ -268,6 +255,7 @@
 
   .hero__subtitle {
     font-size: 10rem;
+    letter-spacing: -4px;
   }
   
   .hero__image {
@@ -298,19 +286,7 @@
   }
   
   .hero__product-link {
-    display: flex;
-    background-color: #379AC9;
-    align-items: center;
     margin-top: 5rem;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-    min-height: 6.5rem;
-    max-width: 35rem;
-    border-radius: 1rem;
-    font-size: 2.4rem;
-    text-decoration: initial;
-    transition: background-color .3s linear;
   }
   
   .hero__review-desktop {

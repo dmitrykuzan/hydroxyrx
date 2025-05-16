@@ -1,0 +1,265 @@
+.ticker {
+  margin-top: 10rem;
+}
+
+.container {
+  overflow-x: clip;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.ticker__line {
+  margin-left: -1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: calc(100% + 2rem);
+  mask-image: linear-gradient(90deg,transparent 0,#000 20%,#000 75%,transparent);
+}
+
+.ticker__line-list {
+  display: inline-flex;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+  list-style: none;
+  margin: initial;
+}
+
+.ticker__line-blue {
+  background-color: #379AC9;
+  transform: rotate(8deg);
+  position: relative;
+  top: 3.8rem;
+
+  .ticker__line-row {
+    animation: marquee-horizontal-left 10000ms linear infinite;
+  }
+}
+
+.ticker__line-pink {
+  background-color: #D5286F;
+  transform: rotate(-8deg);
+
+   .ticker__line-row {
+    animation: marquee-horizontal-right 10000ms linear infinite;
+  }
+}
+
+.ticker__line-row {
+  display: flex;
+  gap: 1rem;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.ticker__item {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 133%;
+  color: #fff;
+  font-weight: 800;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+@media screen and (min-width: 575px) {
+  .ticker__line-blue {
+    transform: rotate(6deg);
+  }
+
+  .ticker__line-pink {
+    transform: rotate(-6deg);
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .ticker {
+    margin-top: 13rem;
+  }
+
+  .ticker__line {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    mask-image: linear-gradient(90deg,transparent 0,#000 20%,#000 60%,transparent);
+  }
+
+  .ticker__line-blue {
+    top: 5rem;
+    transform: rotate(5deg);
+  }
+
+  .ticker__line-pink {
+    transform: rotate(-5deg);
+  }
+
+ .ticker__item {
+   font-size: 2rem;
+ }
+}
+ 
+
+@media screen and (min-width: 1580px) {
+  .ticker {
+    margin-top: 18rem;
+  }
+
+ .ticker__line-blue {
+    top: 5.8rem;
+    transform: rotate(4deg);
+  }
+
+  .ticker__line-pink {
+    transform: rotate(-4deg);
+  }
+
+  .ticker__item {
+   font-size: 2.8rem;
+ }
+}
+
+
+@keyframes marquee-horizontal-left {
+  0% {
+    transform: translateZ(0);
+    visibility: visible;
+  }
+  
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes marquee-horizontal-right {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* quiz */
+
+.quiz-starter {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.quiz-starter__title {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 133%;
+  margin: initial;
+}
+
+.quiz-starter__link {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 375px) {
+  .quiz-starter__title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .quiz-starter {
+    margin-top: 5rem;
+    gap: 3rem;
+  }
+
+  .quiz-starter__title {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .quiz-starter__title {
+    font-size: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1580px) {
+  .quiz-starter__title {
+    font-size: 6rem;
+  }
+
+   .quiz-starter {
+    margin-top: 10rem;
+    gap: 5rem;
+  }
+}
+
+/* certificates */
+
+.certificates {
+ margin-top: 6rem;
+}
+
+.certificates__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 33rem;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding: initial;
+}
+
+.certificates__item {
+  display: flex;
+  max-width: 14rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.certificates__item:first-child {
+  grid-column: 1 / 3;
+}
+
+@media screen and (min-width: 1024px) {
+  .certificates {
+    margin-top: 5rem;
+  }
+
+  .certificates__list {
+    display: flex;
+    max-width: 93rem;
+  }
+
+  .certificates__item {
+    max-width: 18rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .certificates {
+    margin-top: 8rem;
+  }
+
+  .certificates__list {
+    max-width: initial;
+  }
+
+  .certificates__item {
+    max-width: 28rem;
+  }
+}

@@ -1,0 +1,128 @@
+{{ 'ticker-text.css' | asset_url | stylesheet_tag }}
+
+<div class="ticker">
+  <div class="container">
+    <div class="ticker__line ticker__line-blue">
+      <ul class="ticker__line-list">
+        <li class="ticker__line-row">
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+        </li>
+
+        <li class="ticker__line-row">
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+        </li>
+
+        <li class="ticker__line-row">
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="ticker__line ticker__line-pink">
+      <ul class="ticker__line-list">
+        <li class="ticker__line-row">
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+        </li>
+
+        <li class="ticker__line-row">
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+        </li>
+
+        <li class="ticker__line-row">
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+
+          <span class="ticker__item">Free Sample •</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section class="quiz-starter page-width">
+  <h2 class="quiz-starter__title">Pass a quick quiz and get a free sample!</h2>
+  <button class="quiz-starter__link btn btn-pink">Go to quiz</button>
+</section>
+
+<div class="certificates page-width">
+  <ul class="certificates__list">
+    <li class="certificates__item">
+      <img src="{{ 'certificate-1.png' | asset_url }}" width="380" height="380" alt="HydroxyRx certificate">
+    </li>
+    <li class="certificates__item">
+      <img src="{{ 'certificate-2.png' | asset_url }}" width="380" height="380" alt="HydroxyRx certificate">
+    </li>
+    <li class="certificates__item">
+      <img src="{{ 'certificate-3.png' | asset_url }}" width="380" height="380" alt="HydroxyRx certificate">
+    </li>
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "Ticker Text",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Ticker Text"
+    }
+  ]
+}
+{% endschema %}
