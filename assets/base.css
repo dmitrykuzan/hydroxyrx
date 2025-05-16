@@ -104,15 +104,36 @@ html {
   outline: none;
   border: initial;
   cursor: pointer;
-  transition: background-color .3s linear;
+  border: 0.15rem solid transparent;
+  transition: background-color 0.3s linear, box-shadow 0.3s linear, border 0.3s linear;
 }
 
 .btn-blue {
   background-color: #379AC9;
 }
 
+.btn-blue:hover {
+  background-color: #379AC9;
+  box-shadow: 0 4px 10px rgba(55, 154, 201, 0.7), 0 2px 5px rgba(213, 40, 111, 0.7);
+  border: 0.1rem solid #277092;
+}
+
+.btn-blue:active {
+  background-color: #277092;
+}
+
 .btn-pink {
   background-color: #D5286F;
+}
+
+.btn-pink:hover {
+  background-color: #D5286F;
+  border: 0.1rem solid #9b1e52;
+  box-shadow: 0 4px 10px rgba(213, 40, 111, 0.7), 0 2px 5px rgba(213, 40, 111, 0.7);
+}
+
+.btn-pink:active {
+  background-color: #9b1e52;
 }
 
 .btn-black {
