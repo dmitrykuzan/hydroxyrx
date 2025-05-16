@@ -70,6 +70,31 @@
       "name": "About Hydroxy",
       "settings": {}
     },
+    "faq_with_image_9bCUDm": {
+      "type": "faq-with-image",
+      "blocks": {
+        "faq_item_BkLccc": {
+          "type": "faq_item",
+          "settings": {
+            "title": "What Are Alkaloids?",
+            "text": "<p>Alkaloids are a large and diverse group of <strong>naturally occurring</strong> organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p><p><br/>They are most famous for their powerful physiological effects on humans and animals, often acting on the central nervous system, immune system, or cardiovascular system.</p>"
+          }
+        },
+        "faq_item_we798h": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Key Characteristics of Alkaloids:",
+            "text": "<p>Alkaloids are a large and diverse group of naturally occurring organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p><p>They are most famous for their powerful physiological effects on humans and animals, often acting on the central nervous system, immune system, or cardiovascular system.</p><p>They are most famous for their powerful physiological effects on humans and animals, often acting on the central nervous system, immune system, or cardiovascular system.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_BkLccc",
+        "faq_item_we798h"
+      ],
+      "name": "FAQ Section (with image)",
+      "settings": {}
+    },
     "ticker_CECxQX": {
       "type": "ticker",
       "name": "Ticker Text",
@@ -107,39 +132,14 @@
       ],
       "name": "Video Review Slider",
       "settings": {}
-    },
-    "faq_with_image_9bCUDm": {
-      "type": "faq-with-image",
-      "blocks": {
-        "faq_item_BkLccc": {
-          "type": "faq_item",
-          "settings": {
-            "title": "What Are Alkaloids?",
-            "text": "<p>Alkaloids are a large and diverse group of <strong>naturally occurring</strong> organic compounds that contain nitrogen.</p>"
-          }
-        },
-        "faq_item_we798h": {
-          "type": "faq_item",
-          "settings": {
-            "title": "Key Characteristics of Alkaloids:",
-            "text": "<p>Alkaloids are a large and diverse group of naturally occurring organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p><p>They are most famous for their powerful physiological effects on humans and animals, often acting on the central nervous system, immune system, or cardiovascular system.</p><p>They are most famous for their powerful physiological effects on humans and animals, often acting on the central nervous system, immune system, or cardiovascular system.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_item_BkLccc",
-        "faq_item_we798h"
-      ],
-      "name": "FAQ Section (with image)",
-      "settings": {}
     }
   },
   "order": [
     "image_banner",
     "hero_aBgLWt",
     "about_hydroxy_eTPMJ6",
+    "faq_with_image_9bCUDm",
     "ticker_CECxQX",
-    "video_slider_6Fhz9q",
-    "faq_with_image_9bCUDm"
+    "video_slider_6Fhz9q"
   ]
 }
