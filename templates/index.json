@@ -86,11 +86,27 @@
             "title": "Key Characteristics of Alkaloids:",
             "text": "<p>Alkaloids are a large and diverse group of naturally occurring organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p><p>They are most famous for their powerful physiological effects on humans and animals, often acting on the central nervous system, immune system, or cardiovascular system.</p><p>They are most famous for their powerful physiological effects on humans and animals, often acting on the central nervous system, immune system, or cardiovascular system.</p>"
           }
+        },
+        "faq_item_rrD3Yp": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Examples of Common Alkaloids:",
+            "text": "<p>Alkaloids are a large and diverse group of <strong>naturally occurring</strong> organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
+          }
+        },
+        "faq_item_atn4Mx": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Examples of Common Alkaloids:",
+            "text": "<p>Alkaloids are a large and diverse group of <strong>naturally occurring</strong> organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
+          }
         }
       },
       "block_order": [
         "faq_item_BkLccc",
-        "faq_item_we798h"
+        "faq_item_we798h",
+        "faq_item_rrD3Yp",
+        "faq_item_atn4Mx"
       ],
       "name": "FAQ Section (with image)",
       "settings": {}
