@@ -97,7 +97,14 @@
         "faq_item_atn4Mx": {
           "type": "faq_item",
           "settings": {
-            "title": "Examples of Common Alkaloids:",
+            "title": "Why Are Alkaloids Important?",
+            "text": "<p>Alkaloids are a large and diverse group of <strong>naturally occurring</strong> organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
+          }
+        },
+        "faq_item_t4rMBX": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Mechanism of Action:",
             "text": "<p>Alkaloids are a large and diverse group of <strong>naturally occurring</strong> organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
           }
         }
@@ -106,7 +113,8 @@
         "faq_item_BkLccc",
         "faq_item_we798h",
         "faq_item_rrD3Yp",
-        "faq_item_atn4Mx"
+        "faq_item_atn4Mx",
+        "faq_item_t4rMBX"
       ],
       "name": "FAQ Section (with image)",
       "settings": {}
