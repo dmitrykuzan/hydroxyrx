@@ -242,7 +242,7 @@
 
   .certificates__list {
     display: flex;
-    max-width: 93rem;
+    max-width: 70rem;
   }
 
   .certificates__item {
@@ -256,7 +256,7 @@
   }
 
   .certificates__list {
-    max-width: initial;
+    max-width: 100rem;
   }
 
   .certificates__item {
