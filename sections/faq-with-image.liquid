@@ -1,0 +1,51 @@
+<ul class="faq page-width" id="FAQ-{{ section.id }}">
+  {% for block in section.blocks %}
+    <li class="faq__item" {{ block.shopify_attributes }}>
+      <h3 class="faq__item-title">{{ block.settings.title }}</h3>
+      <div class="faq__item-text">
+        {{ block.settings.text }}
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "tag": "div",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "FAQ Section",
+      "blocks": [
+        {
+          "type": "faq_item",
+          "settings": {
+            "title": "What Are Alkaloids?",
+            "text": "Alkaloids are a large and diverse group of <strong>naturally occurring</strong> organic compounds that contain nitrogen."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
