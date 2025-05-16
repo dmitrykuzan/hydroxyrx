@@ -164,12 +164,44 @@
           "type": "faq_item",
           "settings": {
             "title": "What Are Alkaloids?",
-            "text": ""
+            "text": "<p>Alkaloids are a large and diverse group of naturally occurring organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
+          }
+        },
+        "faq_item_K6j3Cp": {
+          "type": "faq_item",
+          "settings": {
+            "title": "What is 7-hydroxymitragynine?",
+            "text": "<p>Alkaloids are a large and diverse group of naturally occurring organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
+          }
+        },
+        "faq_item_LQ7cHM": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Is 7-hydroxy better than Kratom?",
+            "text": "<p>Alkaloids are a large and diverse group of naturally occurring organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
+          }
+        },
+        "faq_item_m4HJxi": {
+          "type": "faq_item",
+          "settings": {
+            "title": "How do I take 7-hydroxymitragynine?",
+            "text": "<p>Alkaloids are a large and diverse group of naturally occurring organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
+          }
+        },
+        "faq_item_n4X6Wx": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Is 7-hydroxy legal in my state or city?",
+            "text": "<p>Alkaloids are a large and diverse group of naturally occurring organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
           }
         }
       },
       "block_order": [
-        "faq_item_fAEJYh"
+        "faq_item_fAEJYh",
+        "faq_item_K6j3Cp",
+        "faq_item_LQ7cHM",
+        "faq_item_m4HJxi",
+        "faq_item_n4X6Wx"
       ],
       "name": "FAQ Section (with text)",
       "settings": {}
