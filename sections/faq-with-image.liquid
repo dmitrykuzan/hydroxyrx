@@ -1,18 +1,45 @@
-<ul class="faq page-width" id="FAQ-{{ section.id }}">
-  {% for block in section.blocks %}
-    <li class="faq__item" {{ block.shopify_attributes }}>
-      <h3 class="faq__item-title">{{ block.settings.title }}</h3>
-      <div class="faq__item-text">
-        {{ block.settings.text }}
-      </div>
-    </li>
-  {% endfor %}
-</ul>
+{{ 'faq-with-image.css' | asset_url | stylesheet_tag }}
+
+<div class="faq-with-image page-width">
+  <div class="faq-with-image__wrapper">
+    <div class="faq-with-image__picture">
+      <img src="{{ 'hydroxyrx-faq.jpg' | asset_url }}" width="790" height="580" alt="HydroxyRx">
+    </div>
+    <ul class="faq">
+      {% for block in section.blocks %}
+        <li class="faq__item" {{ block.shopify_attributes }}>
+          <h3 class="faq__item-title">{{ block.settings.title }}</h3>
+          <div class="faq__item-text">
+            <div class="faq__item-text-wrapper">
+              {{ block.settings.text }}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const faqItems = document.querySelectorAll('.faq .faq__item');
+
+    faqItems.forEach(function (item) {
+      const title = item.querySelector('.faq__item-title');
+
+      if (title) {
+        title.addEventListener('click', function () {
+          item.classList.toggle('active');
+        });
+      }
+    });
+  });
+</script>
 
 {% schema %}
 {
   "name": "FAQ",
-  "tag": "div",
+  "tag": "section",
   "settings": [],
   "blocks": [
     {

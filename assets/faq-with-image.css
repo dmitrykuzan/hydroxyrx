@@ -1,0 +1,140 @@
+.faq-with-image {
+  margin-top: 10rem;
+}
+
+.faq-with-image__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.faq-with-image__picture {
+  display: flex;
+  max-width: 55rem;
+  height: max-content;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .faq-with-image {
+    margin-top: 15rem;
+  }
+
+  .faq-with-image__wrapper {
+    flex-direction: row;
+  }
+
+  .faq-with-image__picture {
+    max-width: 45rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .faq-with-image__picture {
+    max-width: 55rem;
+  }
+}
+
+@media screen and (min-width: 1580px) {
+  .faq-with-image {
+    margin-top: 17rem;
+  }
+
+  .faq-with-image__picture {
+    max-width: 65rem;
+  }
+}
+
+/* faq */
+.faq {
+  list-style: none;
+  padding: initial;
+  margin: initial;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.faq__item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  transition: box-shadow 0.3s linear;
+}
+
+.faq__item:hover {
+  box-shadow: 0 0px 50px rgba(213, 40, 111, 0.2);
+}
+
+.faq__item-title {
+  position: relative;
+  margin: initial;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 4rem;
+  cursor: pointer;
+}
+
+.faq__item-title::before, .faq__item-title::after {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: #379AC9;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s linear;
+}
+
+.faq__item-title::before {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.faq__item-text-wrapper {
+  padding-top: 0rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.faq__item-text-wrapper >* {
+  margin: initial;
+}
+
+.faq__item-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.faq__item.active {
+  .faq__item-text {
+    transition: max-height 1s ease-in-out;
+    max-height: 90rem;
+  }
+
+  .faq__item-title::before {
+    transform: translateY(-50%) rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 1580px) {
+  .faq__item-title {
+    font-size: 2.2rem;
+  }
+}
