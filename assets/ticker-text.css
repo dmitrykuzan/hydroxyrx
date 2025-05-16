@@ -49,6 +49,7 @@
 .ticker__line-row {
   display: flex;
   gap: 1rem;
+  padding-left: 0.8rem;
   white-space: nowrap;
   will-change: transform;
 }
