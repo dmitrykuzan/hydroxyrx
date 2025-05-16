@@ -76,6 +76,10 @@
   line-height: 166%;
 }
 
+.faq-with-text {
+  margin-bottom: 10rem;
+}
+
 @media screen and (min-width: 1023px) {
   .faq-with-image__text {
     max-width: 50rem;
@@ -93,6 +97,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .faq-with-text {
+    margin-bottom: 15rem;
+  }
+
   .faq-with-image__title {
     font-size: 4.6rem;
   }
