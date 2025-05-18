@@ -212,7 +212,7 @@
       "settings": {
         "blog": "news",
         "post_limit": 3,
-        "heading": "Blog posts",
+        "heading": "Latest News",
         "heading_size": "h1",
         "columns_desktop": 3,
         "show_view_all": true,
