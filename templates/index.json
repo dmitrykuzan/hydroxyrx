@@ -206,13 +206,13 @@
       "name": "FAQ Section (with text)",
       "settings": {}
     },
-    "featured_blog_8EBMEb": {
+    "featured_blog_whTpnF": {
       "type": "featured-blog",
       "name": "t:sections.featured-blog.presets.name",
       "settings": {
-        "blog": "",
+        "blog": "news",
         "post_limit": 3,
-        "heading": "Latest News",
+        "heading": "Blog posts",
         "heading_size": "h1",
         "columns_desktop": 3,
         "show_view_all": true,
@@ -233,6 +233,6 @@
     "ticker_CECxQX",
     "video_slider_6Fhz9q",
     "faq_with_text_iz9ydH",
-    "featured_blog_8EBMEb"
+    "featured_blog_whTpnF"
   ]
 }
