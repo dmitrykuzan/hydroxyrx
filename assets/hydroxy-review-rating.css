@@ -1,0 +1,287 @@
+.hydroxy-review-rating {
+  margin-top: 8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .hydroxy-review-rating {
+    margin-top: 15rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hydroxy-review-rating {
+    margin-top: 20rem;
+  }
+}
+
+.hydroxy-review-rating__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3rem;
+}
+
+@media screen and (min-width: 767px) {
+  .hydroxy-review-rating__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hydroxy-review-rating__wrapper {
+   flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .hydroxy-review-rating__wrapper {
+    max-width: 103rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hydroxy-review-rating__statistic {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  flex-shrink: 0;
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .hydroxy-review-rating__statistic {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hydroxy-review-rating__statistic {
+    max-width: 55rem;
+  }
+}
+
+.hydroxy-review-rating__title {
+  font-size: 3.8rem;
+  margin-bottom: 3rem;
+  margin-top: initial;
+  text-align: center;
+  color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+  .hydroxy-review-rating__title {
+    font-size: 5.2rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hydroxy-review-rating__title {
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .hydroxy-review-rating__title {
+    font-size: 7rem;
+    margin-bottom: 10rem;
+  }
+}
+
+.hydroxy-review-rating__summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hydroxy-review-rating__total-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .hydroxy-review-rating__summary {
+    gap: 2rem;
+  }
+}
+
+.hydroxy-review-rating__total {
+  font-size: 1.8rem;
+  line-height: 120%;
+  min-width: 3rem;
+  text-align: start;
+  color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+  .hydroxy-review-rating__total {
+    font-size: 3.2rem;
+    min-width: 5rem;
+  }
+}
+
+.hydroxy-review-rating__summary-text {
+  margin-left: auto;
+  margin-top: initial;
+  margin-bottom: initial;
+  font-size: 1.2rem;
+  line-height: 110%;
+}
+
+@media screen and (min-width: 1024px) {
+  .hydroxy-review-rating__summary-text {
+    font-size: 3rem;
+  }
+}
+
+.hydroxy-review-rating__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding: initial;
+  margin: initial;
+}
+
+.hydroxy-review-rating__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .hydroxy-review-rating__item {
+    gap: 2rem;
+  }
+}
+
+.hydroxy-review-rating__item:nth-child(2) .hydroxy-review-rating__progress::before {
+  width: 60%;
+}
+
+.hydroxy-review-rating__item:nth-child(3) .hydroxy-review-rating__progress::before {
+  width: 50%;
+}
+
+.hydroxy-review-rating__item:nth-child(4) .hydroxy-review-rating__progress::before {
+  width: 30%;
+}
+
+.hydroxy-review-rating__item:nth-child(5) .hydroxy-review-rating__progress::before {
+  width: 10%;
+}
+
+.hydroxy-review-rating__star {
+  display: flex;
+}
+
+.hydroxy-review-rating__progress {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  border-radius: 10rem;
+  background-color: #E8E8E8;
+}
+
+.hydroxy-review-rating__progress::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #ffc107;
+  border-radius: 10rem;
+}
+
+.hydroxy-review-rating__all {
+  margin: initial;
+  font-size: 1.4rem;
+  min-width: 3rem;
+  text-align: right;
+}
+
+.hydroxy-review-rating__images-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  .hydroxy-rating-stars {
+    
+  }
+}
+
+.hydroxy-review-rating__image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hydroxy-review-rating__all {
+    font-size: 1.8rem;
+    min-width: 4rem;
+  }
+}
+
+.hydroxy-review-rating__images {
+  display: none;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .hydroxy-review-rating__images {
+    display: flex;
+  }
+}
+
+.hydroxy-review-rating__image {
+  display: flex;
+  max-width: 13rem;
+}
+
+.hydroxy-review-rating__image img {
+  border-radius: 2rem;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1280px) {
+  .hydroxy-review-rating__image {
+    max-width: 17rem;
+  }
+}
+
+
+@media screen and (min-width: 1060px) {
+  .hydroxy-review-rating__images-body {
+    .hydroxy-rating-stars {
+      gap: 1rem;
+    }
+  }
+
+  .hydroxy-review-rating__total-wrapper {
+  .hydroxy-review-rating__total {
+      font-size: 5rem;
+    }
+  }
+}
