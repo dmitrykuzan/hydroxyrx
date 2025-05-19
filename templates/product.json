@@ -103,6 +103,11 @@
         "subtitle": "<p>We’ve helped <strong>60,000+</strong> customers </p>"
       }
     },
+    "volufiline_purchase_xqNgck": {
+      "type": "volufiline-purchase",
+      "name": "Volufiline purchase",
+      "settings": {}
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -120,11 +125,94 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "hydroxy_review_rating_fQ4QcB": {
+      "type": "hydroxy-review-rating",
+      "name": "hydroxy Rating",
+      "settings": {}
+    },
+    "custom_review_UthtkC": {
+      "type": "custom-review",
+      "blocks": {
+        "list_item_niHi7i": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
+          }
+        },
+        "list_item_PCrjh6": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
+          }
+        },
+        "list_item_Q4bhMc": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
+          }
+        },
+        "list_item_RcGaAB": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
+          }
+        },
+        "list_item_HRB8VP": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
+          }
+        },
+        "list_item_FUJFt9": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_niHi7i",
+        "list_item_PCrjh6",
+        "list_item_Q4bhMc",
+        "list_item_RcGaAB",
+        "list_item_HRB8VP",
+        "list_item_FUJFt9"
+      ],
+      "name": "Custom Review List",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "video_slider_TTVpmQ",
-    "related-products"
+    "volufiline_purchase_xqNgck",
+    "related-products",
+    "hydroxy_review_rating_fQ4QcB",
+    "custom_review_UthtkC"
   ]
 }
