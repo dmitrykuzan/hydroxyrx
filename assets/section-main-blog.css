@@ -8,6 +8,7 @@
     padding: 1rem;
     background-color: #f7f7f7;
     border-radius: 1rem;
+    transition: background-color 0.3s linear, color 0.3s linear;
   }
 
   .article-card:hover {
