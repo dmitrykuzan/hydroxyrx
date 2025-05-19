@@ -162,11 +162,13 @@ product-info {
 }
 
 .shopify-payment-button__button--unbranded {
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  /* background-color: rgba(var(--color-button), var(--alpha-button-background)); */
   color: rgb(var(--color-button-text));
   font-size: 1.4rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
   letter-spacing: 0.07rem;
+  background-color: #379AC9;
+  outline: none;
 }
 
 .shopify-payment-button__button--unbranded::selection {
@@ -1751,5 +1753,34 @@ a.product__text {
 @media screen and (min-width: 992px) {
   .custom__lowstock-value {
     font-size: 1.8rem;
+  }
+}
+
+
+.certificates__list-product {
+  list-style: none;
+  padding: initial;
+  margin: initial;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .certificates__item {
+    max-width: 10rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+ .certificates__list-product {
+    .certificates__item {
+      max-width: 13rem;
+    }
   }
 }

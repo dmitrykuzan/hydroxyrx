@@ -22,6 +22,10 @@
   margin: initial;
 }
 
+.video-slider__subtitle >* { 
+  margin: initial;
+}
+
 .video-slider__subtitle {
   font-size: 1.8rem;
   color: #808080;
