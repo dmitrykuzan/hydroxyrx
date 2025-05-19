@@ -110,6 +110,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -211,8 +212,8 @@
     "main",
     "video_slider_TTVpmQ",
     "volufiline_purchase_xqNgck",
-    "related-products",
     "hydroxy_review_rating_fQ4QcB",
-    "custom_review_UthtkC"
+    "custom_review_UthtkC",
+    "related-products"
   ]
 }
