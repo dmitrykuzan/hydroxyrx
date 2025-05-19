@@ -67,6 +67,42 @@
         "padding_bottom": 12
       }
     },
+    "video_slider_TTVpmQ": {
+      "type": "video-slider",
+      "blocks": {
+        "video_slide_bWjMPm": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/152c296161214d1aa3ee22b916751da9.mp4",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-1.jpg?v=1747322028"
+          }
+        },
+        "video_slide_gwYUUR": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-3.jpg?v=1747322027"
+          }
+        },
+        "video_slide_naLnjm": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/22ee860324744869b88cb064f74962ea.mp4",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-2.jpg?v=1747322028"
+          }
+        }
+      },
+      "block_order": [
+        "video_slide_bWjMPm",
+        "video_slide_gwYUUR",
+        "video_slide_naLnjm"
+      ],
+      "name": "Video Review Slider",
+      "settings": {
+        "title": "Real Talk: What You’ll Feel",
+        "subtitle": "<p>We’ve helped <strong>60,000+</strong> customers </p>"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -84,39 +120,11 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "video_slider_TTVpmQ": {
-      "type": "video-slider",
-      "blocks": {
-        "video_slide_bWjMPm": {
-          "type": "video_slide",
-          "settings": {
-            "video_url": "",
-            "poster_url": ""
-          }
-        },
-        "video_slide_gwYUUR": {
-          "type": "video_slide",
-          "settings": {
-            "video_url": "",
-            "poster_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "video_slide_bWjMPm",
-        "video_slide_gwYUUR"
-      ],
-      "name": "Video Review Slider",
-      "settings": {
-        "title": "Real Talk: What You’ll Feel",
-        "subtitle": "<p>We’ve helped <strong>60,000+</strong> customers </p>"
-      }
     }
   },
   "order": [
     "main",
-    "related-products",
-    "video_slider_TTVpmQ"
+    "video_slider_TTVpmQ",
+    "related-products"
   ]
 }
