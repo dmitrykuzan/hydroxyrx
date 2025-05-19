@@ -1196,7 +1196,7 @@
     {% endcomment %}
 
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
-      <div class="melatonic__logo-wrapper">
+      <div class="hydroxy__logo-wrapper">
         {%- if section.settings.logo_position != 'middle-center' -%}
           {%- if request.page_type == 'index' -%}
             <h1 class="header__heading">
@@ -1231,7 +1231,7 @@
         {%- endif -%}
 
         {%- if section.settings.newsletter_enable -%}
-          <div class="footer-block__newsletter footer-block__newsletter-melatonic-mobile">
+          <div class="footer-block__newsletter footer-block__newsletter-hydroxy-mobile">
             {%- if section.settings.newsletter_heading != blank -%}
               <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
             {%- endif -%}
@@ -1441,7 +1441,7 @@
                 data-cascade
               {% endif %}
             >
-              <div class="melatonic__newsletter-wrapper-desktop">
+              <div class="hydroxy__newsletter-wrapper-desktop">
                 {%- if section.settings.newsletter_enable -%}
                   <div class="footer-block__newsletter">
                     {%- if section.settings.newsletter_heading != blank -%}
@@ -1525,7 +1525,7 @@
               {%- endif -%}
 
               {% comment %} print link product {% endcomment %}
-              {% assign product = all_products.melatonic %}
+              {% assign product = all_products.hydroxy %}
               {% if product %}
                 <a class="footer__link-cta" href="{{ product.url }}">Buy Now</a>
               {% endif %}

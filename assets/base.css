@@ -78,13 +78,6 @@ html {
   --shadow-visible: var(--media-shadow-visible);
 }
 
-.melatonic-btn-hover:hover {
-  background-color: #360602;
-}
-
-.melatonic-btn-hover:active {
-  background-color: #c5c5c5;
-}
 
 /* ui button */
 .btn {
@@ -201,13 +194,13 @@ html {
 
 /* stars */
 
-.melatonic-rating-stars {
+.hydroxy-rating-stars {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.melatonic-rating-star {
+.hydroxy-rating-star {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,0 +1,70 @@
+{{ 'hydroxy-product-slider.css' | asset_url | stylesheet_tag }}
+
+<div class="hydroxy-product-slider__wrapper" id="hydroxy-product">
+  <div class="swiper hydroxy-product-slider__big">
+    <div class="swiper-wrapper">
+      {%- assign media_counter = 0 -%}
+      {%- for media in product.media -%}
+        {%- if media.media_type == 'image' -%}
+          <div class="swiper-slide">
+            <div class="hydroxy-product-slider__image-big">
+              {{ media | image_url: width: 800 | image_tag: loading: 'lazy', alt: media.alt | escape }}
+            </div>
+          </div>
+          {%- assign media_counter = media_counter | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+
+  <div thumbsSlider="" class="swiper hydroxy-product-slider__thumbs">
+    <div class="swiper-wrapper">
+      {%- assign media_counter = 0 -%}
+      {%- for media in product.media -%}
+        {%- if media.media_type == 'image' -%}
+          <div class="swiper-slide">
+            <div class="hydroxy-product-slider__image-thumbs">
+              {{ media | image_url: width: 165 | image_tag: loading: 'lazy', alt: media.alt | escape }}
+            </div>
+          </div>
+          {%- assign media_counter = media_counter | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.hydroxy-product-slider__thumbs', {
+      spaceBetween: 8,
+      slidesPerView: 5,
+      watchSlidesProgress: true,
+
+      breakpoints: {
+        1024: {
+          spaceBetween: 10,
+        },
+
+        1480: {
+          direction: 'vertical',
+          spaceBetween: 12,
+        },
+      },
+    });
+
+    var swiper2 = new Swiper('.hydroxy-product-slider__big', {
+      spaceBetween: 5,
+
+      thumbs: {
+        swiper: swiper,
+      },
+
+      breakpoints: {
+        1024: {
+          spaceBetween: 10,
+        },
+      },
+    });
+  });
+</script>

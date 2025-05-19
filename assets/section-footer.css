@@ -26,7 +26,7 @@
 
 
 
-.melatonic__logo-wrapper {
+.hydroxy__logo-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,7 +34,7 @@
   width: 100%;
 }
 
-.melatonic__newsletter-wrapper-desktop {
+.hydroxy__newsletter-wrapper-desktop {
   display: none;
 }
 
@@ -60,13 +60,13 @@
 }
 
 @media screen and (min-width: 480px) {
-  .melatonic__logo-wrapper {
+  .hydroxy__logo-wrapper {
     gap: 10rem;
   }
 }
 
 @media screen and (min-width: 560px) {
-  .melatonic__logo-wrapper {
+  .hydroxy__logo-wrapper {
     gap: 15rem;
   }
 }
@@ -607,7 +607,7 @@
 
 
 @media screen and (min-width: 750px) {
-  .footer-block__newsletter-melatonic-mobile {
+  .footer-block__newsletter-hydroxy-mobile {
     display: none !important;
   }
 
@@ -616,11 +616,11 @@
     gap: 2rem;
   }
 
-  .melatonic__newsletter-wrapper-desktop {
+  .hydroxy__newsletter-wrapper-desktop {
     display: flex;
   }
 
-  .melatonic__logo-wrapper {
+  .hydroxy__logo-wrapper {
     width: initial;
     justify-content: center;
   }

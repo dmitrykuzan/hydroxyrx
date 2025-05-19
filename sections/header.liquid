@@ -307,9 +307,8 @@
         {%- endif -%}
       </a>
     </div>
-
     {% comment %} print link product {% endcomment %}
-    {% assign product = all_products.melatonic %}
+    {% assign product = all_products['7-hydroxymitragynine'] %}
     {% if product %}
       <a class="header__link-cta" href="{{ product.url }}">Buy Now</a>
     {% endif %}
