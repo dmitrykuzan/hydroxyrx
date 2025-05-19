@@ -551,6 +551,7 @@ blockquote {
   letter-spacing: 0.13rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
   text-transform: uppercase;
+   transition: color 0.3s linear;
 }
 
 .caption-with-letter-spacing--medium {
@@ -715,6 +716,7 @@ hr {
   text-decoration: none;
   color: currentColor;
   display: block;
+  transition: color 0.3s linear;
 }
 
 .placeholder {
@@ -1272,7 +1274,7 @@ summary::-webkit-details-marker {
 /* component-media */
 .media {
   display: block;
-  background-color: rgba(var(--color-foreground), 0.1);
+  /* background-color: rgba(var(--color-foreground), 0.1); */
   position: relative;
   overflow: hidden;
 }

@@ -1,3 +1,10 @@
+.hydroxy-featured-blog-subtitle {
+  font-size: 1.5rem;
+  color: #808080;
+  line-height: 166%;
+  text-align: center;
+}
+
 .blog-placeholder-svg {
   height: 100%;
 }
@@ -6,10 +13,20 @@
   .grid--1-col-desktop .article-card .card__content {
     text-align: center;
   }
+
+  .hydroxy-featured-blog-subtitle {
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: initial;
+  }
 }
 
 .blog__title {
   margin: 0;
+  text-align: center;
+  width: 100%;
 }
 
 .blog__posts.articles-wrapper {

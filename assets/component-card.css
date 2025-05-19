@@ -294,6 +294,10 @@
   object-fit: cover;
   object-position: center center;
   width: 100%;
+  
+  /* padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem; */
 }
 
 .card__inner:not(.ratio) > .card__content {
