@@ -67,8 +67,50 @@
         "padding_bottom": 12
       }
     },
+    "video_slider_TTVpmQ": {
+      "type": "video-slider",
+      "blocks": {
+        "video_slide_bWjMPm": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/152c296161214d1aa3ee22b916751da9.mp4",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-1.jpg?v=1747322028"
+          }
+        },
+        "video_slide_gwYUUR": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-3.jpg?v=1747322027"
+          }
+        },
+        "video_slide_naLnjm": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/22ee860324744869b88cb064f74962ea.mp4",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-2.jpg?v=1747322028"
+          }
+        }
+      },
+      "block_order": [
+        "video_slide_bWjMPm",
+        "video_slide_gwYUUR",
+        "video_slide_naLnjm"
+      ],
+      "name": "Video Review Slider",
+      "settings": {
+        "title": "Real Talk: What You’ll Feel",
+        "subtitle": "<p>We’ve helped <strong>60,000+</strong> customers </p>"
+      }
+    },
+    "volufiline_purchase_xqNgck": {
+      "type": "volufiline-purchase",
+      "name": "Volufiline purchase",
+      "settings": {}
+    },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -85,38 +127,93 @@
         "padding_bottom": 28
       }
     },
-    "video_slider_TTVpmQ": {
-      "type": "video-slider",
+    "hydroxy_review_rating_fQ4QcB": {
+      "type": "hydroxy-review-rating",
+      "name": "hydroxy Rating",
+      "settings": {}
+    },
+    "custom_review_UthtkC": {
+      "type": "custom-review",
       "blocks": {
-        "video_slide_bWjMPm": {
-          "type": "video_slide",
+        "list_item_niHi7i": {
+          "type": "list_item",
           "settings": {
-            "video_url": "",
-            "poster_url": ""
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
           }
         },
-        "video_slide_gwYUUR": {
-          "type": "video_slide",
+        "list_item_PCrjh6": {
+          "type": "list_item",
           "settings": {
-            "video_url": "",
-            "poster_url": ""
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
+          }
+        },
+        "list_item_Q4bhMc": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
+          }
+        },
+        "list_item_RcGaAB": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
+          }
+        },
+        "list_item_HRB8VP": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
+          }
+        },
+        "list_item_FUJFt9": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Jack",
+            "title_review": "HydroxyRx • For Focus at Work",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Great Product</p>"
           }
         }
       },
       "block_order": [
-        "video_slide_bWjMPm",
-        "video_slide_gwYUUR"
+        "list_item_niHi7i",
+        "list_item_PCrjh6",
+        "list_item_Q4bhMc",
+        "list_item_RcGaAB",
+        "list_item_HRB8VP",
+        "list_item_FUJFt9"
       ],
-      "name": "Video Review Slider",
-      "settings": {
-        "title": "Real Talk: What You’ll Feel",
-        "subtitle": "<p>We’ve helped <strong>60,000+</strong> customers </p>"
-      }
+      "name": "Custom Review List",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "related-products",
-    "video_slider_TTVpmQ"
+    "video_slider_TTVpmQ",
+    "volufiline_purchase_xqNgck",
+    "hydroxy_review_rating_fQ4QcB",
+    "custom_review_UthtkC",
+    "related-products"
   ]
 }
