@@ -7,7 +7,7 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M29.6001 2.33055C29.7269 2.20378 29.8275 2.05328 29.8961 1.88764C29.9647 1.72201 30 1.54448 30 1.3652C30 1.18592 29.9647 1.0084 29.8961 0.842762C29.8275 0.677128 29.7269 0.526629 29.6001 0.399858C29.4734 0.273087 29.3229 0.172528 29.1572 0.10392C28.9916 0.0353121 28.8141 0 28.6348 0C28.4555 0 28.278 0.0353121 28.1124 0.10392C27.9467 0.172528 27.7962 0.273087 27.6695 0.399858L15 13.072L2.33055 0.399858C2.20378 0.273087 2.05328 0.172528 1.88764 0.10392C1.72201 0.0353121 1.54448 1.33575e-09 1.3652 0C1.18592 -1.33575e-09 1.0084 0.0353121 0.842762 0.10392C0.677128 0.172528 0.526629 0.273087 0.399858 0.399858C0.273087 0.526629 0.172528 0.677128 0.10392 0.842762C0.0353121 1.0084 -1.33575e-09 1.18592 0 1.3652C1.33575e-09 1.54448 0.0353121 1.72201 0.10392 1.88764C0.172528 2.05328 0.273087 2.20378 0.399858 2.33055L13.072 15L0.399858 27.6695C0.143833 27.9255 0 28.2727 0 28.6348C0 28.9969 0.143833 29.3441 0.399858 29.6001C0.655883 29.8562 1.00313 30 1.3652 30C1.72728 30 2.07452 29.8562 2.33055 29.6001L15 16.928L27.6695 29.6001C27.9255 29.8562 28.2727 30 28.6348 30C28.9969 30 29.3441 29.8562 29.6001 29.6001C29.8562 29.3441 30 28.9969 30 28.6348C30 28.2727 29.8562 27.9255 29.6001 27.6695L16.928 15L29.6001 2.33055Z" fill="black"/>
       </svg>
     </button>
-    <form class="quiz-modal__form">
+    {%- form 'contact', id: 'QuizForm', class: 'quiz-modal__form' -%}
       <div class="quiz-modal__step quiz-modal__step--1 show">
         <div class="quiz-modal__progress-wrapper">
           <h3 class="quiz-modal__progress-title">Let’s Start</h3>
@@ -21,7 +21,7 @@
           <ul class="quiz-modal__buttons">
             <li>
               <label class="quiz-modal__button">
-                <input class="quiz-modal__input" type="radio" name="quiz-step-1">
+                <input class="quiz-modal__input" type="radio" name="contact[step-quiz-1]">
                 <span class="quiz-modal__span">
                   <p class="quiz-modal__input-text">21-30</p>
                 </span>
@@ -29,7 +29,7 @@
             </li>
             <li>
               <label class="quiz-modal__button">
-                <input class="quiz-modal__input" type="radio" name="quiz-step-1">
+                <input class="quiz-modal__input" type="radio" name="contact[step-quiz-2]">
                 <span class="quiz-modal__span">
                   <p class="quiz-modal__input-text">31-40</p>
                 </span>
@@ -37,7 +37,7 @@
             </li>
             <li>
               <label class="quiz-modal__button">
-                <input class="quiz-modal__input" type="radio" name="quiz-step-1">
+                <input class="quiz-modal__input" type="radio" name="contact[step-quiz-3]">
                 <span class="quiz-modal__span">
                   <p class="quiz-modal__input-text">41-50</p>
                 </span>
@@ -72,7 +72,7 @@
           <ul class="quiz-modal__buttons">
             <li>
               <label class="quiz-modal__button">
-                <input class="quiz-modal__input" type="radio" name="quiz-step-2">
+                <input class="quiz-modal__input" type="radio" name="contact[step-quiz-2]">
                 <span class="quiz-modal__span">
                   <p class="quiz-modal__input-text">Yes</p>
                 </span>
@@ -80,7 +80,7 @@
             </li>
             <li>
               <label class="quiz-modal__button">
-                <input class="quiz-modal__input" type="radio" name="quiz-step-2">
+                <input class="quiz-modal__input" type="radio" name="contact[step-quiz-2]">
                 <span class="quiz-modal__span">
                   <p class="quiz-modal__input-text">No</p>
                 </span>
@@ -114,7 +114,7 @@
           <ul class="quiz-modal__buttons">
             <li>
               <label class="quiz-modal__button">
-                <input class="quiz-modal__input" type="radio" name="quiz-step-3">
+                <input class="quiz-modal__input" type="radio" name="contact[step-quiz-3]">
                 <span class="quiz-modal__span">
                   <p class="quiz-modal__input-text">Yes</p>
                 </span>
@@ -122,7 +122,7 @@
             </li>
             <li>
               <label class="quiz-modal__button">
-                <input class="quiz-modal__input" type="radio" name="quiz-step-3">
+                <input class="quiz-modal__input" type="radio" name="contact[step-quiz-3]">
                 <span class="quiz-modal__span">
                   <p class="quiz-modal__input-text">No</p>
                 </span>
@@ -156,7 +156,7 @@
           <ul class="quiz-modal__buttons">
             <li>
               <label class="quiz-modal__button">
-                <input class="quiz-modal__input" type="radio" name="quiz-step-4">
+                <input class="quiz-modal__input" type="radio" name="contact[step-quiz-4]">
                 <span class="quiz-modal__span">
                   <p class="quiz-modal__input-text">Yes</p>
                 </span>
@@ -164,7 +164,7 @@
             </li>
             <li>
               <label class="quiz-modal__button">
-                <input class="quiz-modal__input" type="radio" name="quiz-step-4">
+                <input class="quiz-modal__input" type="radio" name="contact[step-quiz-4]">
                 <span class="quiz-modal__span">
                   <p class="quiz-modal__input-text">No</p>
                 </span>
@@ -198,17 +198,17 @@
           <ul class="quiz-modal__buttons">
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="Name" type="text">
+                <input placeholder="Name" type="text" name="contact[quiz-name]">
               </div>
             </li>
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="Phone number" type="number">
+                <input placeholder="Phone number" type="number" name="contact[quiz-phone-number]">
               </div>
             </li>
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="Shipping address" type="text">
+                <input placeholder="Shipping address" type="text" name="contact[quiz-address]">
               </div>
             </li>
           </ul>
@@ -217,26 +217,8 @@
         <div class="quiz-modal__navigation">
           <button class="quiz-modal__btn-next btn btn-blue" type="submit">Submit</button>
         </div>
-
-        {% form 'contact' %}
-          {{ form.errors | default_errors }}
-
-          <div class="first-name">
-            <label for="first-name">First name</label>
-            <input type="text" name="contact[first_name]" id="first-name">
-          </div>
-
-          <div class="last-name">
-            <label for="last-name">Last name</label>
-            <input type="text" name="contact[last_name]" id="last-name">
-          </div>
-
-          <div class="submit">
-            <input type="submit" value="Create">
-          </div>
-        {% endform %}
       </div>
-    </form>
+    {%- endform -%}
   </div>
 </div>
 
