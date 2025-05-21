@@ -8,28 +8,6 @@
       </svg>
     </button>
     {%- form 'contact', id: 'QuizForm', class: 'quiz-modal__form' -%}
-      {%- if form.posted_successfully? -%}
-        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
-          {{- 'icon-success.svg' | inline_asset_content -}}
-          {{ 'templates.contact.form.post_success' | t }}
-        </h2>
-      {%- elsif form.errors -%}
-        <div class="form__message">
-          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
-            {{- 'icon-error.svg' | inline_asset_content -}}
-            {{ 'templates.contact.form.error_heading' | t }}
-          </h2>
-        </div>
-        <ul class="form-status-list caption-large" role="list">
-          <li>
-            <a href="#ContactForm-email" class="link">
-              {{ form.errors.translated_fields.email | capitalize }}
-              {{ form.errors.messages.email }}
-            </a>
-          </li>
-        </ul>
-      {%- endif -%}
-
       <div class="quiz-modal__step quiz-modal__step--1 show">
         <div class="quiz-modal__progress-wrapper">
           <h3 class="quiz-modal__progress-title">Let’s Start</h3>
@@ -220,12 +198,12 @@
           <ul class="quiz-modal__buttons">
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="Name" type="text" name="contact[quiz-name]" id="input-name">
+                <input placeholder="Name" type="text" name="contact[name]" id="input-name">
               </div>
             </li>
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="E-mail" type="email" name="contact[quiz-email]" id="input-email">
+                <input placeholder="E-mail" type="email" name="contact[email]" id="input-email">
               </div>
             </li>
             <li>
@@ -235,7 +213,7 @@
             </li>
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="Shipping address" type="text" name="contact[quiz-address]" id="useer-address">
+                <input placeholder="Shipping address" type="text" name="contact[body]" id="useer-address">
               </div>
             </li>
           </ul>
