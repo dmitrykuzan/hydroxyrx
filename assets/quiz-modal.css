@@ -10,6 +10,17 @@
   justify-content: center;
   backdrop-filter: blur(5px);
   transition: opacity 0.3s linear, visibility 0.3s linear, z-index 0.3s linear;
+
+
+  .form__message {
+    margin-top: initial;
+    margin-bottom: 2rem;
+  }
+
+  .form-status-list {
+    margin-top: initial;
+    margin-bottom: 2rem;
+  }
 }
 
 .quiz-modal__wrapper.active {
