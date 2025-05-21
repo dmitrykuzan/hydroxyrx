@@ -1,0 +1,146 @@
+.hydroxy-benefits {
+  margin-top: 8rem;
+}
+
+.hydroxy-benefits__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.hydroxy-benefits__titles >* {
+  margin: 0;
+}
+
+.hydroxy-benefits__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hydroxy-benefits__title {
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-align: center;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.hydroxy-benefits__subtitle {
+  text-align: center;
+}
+
+.hydroxy-benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style: none;
+  margin: initial;
+  padding-left: initial;
+}
+
+.hydroxy-benefits__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #F9F9F9;
+  border-radius: 1rem;
+}
+
+.hydroxy-benefits__item-title {
+  text-align: center;
+  color: #379AC9;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 133%;
+  margin: initial;
+}
+
+.hydroxy-benefits__item-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hydroxy-benefits__item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.1rem solid #AFAFAF;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  flex-shrink: 0;
+
+  img {
+   width: 6rem;
+   height: 6rem;
+   object-fit: contain;
+  }
+}
+
+.hydroxy-benefits__description {
+  line-height: 166%;
+  color: #000;
+  margin: initial;
+}
+
+@media screen and (min-width: 767px) {
+  .hydroxy-benefits__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .hydroxy-benefits {
+    margin-top: 12rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hydroxy-benefits {
+    margin-top: 15rem;
+  }
+
+  .hydroxy-benefits__wrapper {
+    gap: 8rem;
+  }
+
+  .hydroxy-benefits__title {
+    font-size: 4.6rem;
+  }
+
+  .hydroxy-benefits__subtitle {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hydroxy-benefits {
+    margin-top: 18rem;
+  }
+
+  .hydroxy-benefits__list {
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hydroxy-benefits__item {
+    justify-content: initial;
+  }
+
+  .hydroxy-benefits__item-title {
+    min-height: 6rem;
+  }
+}

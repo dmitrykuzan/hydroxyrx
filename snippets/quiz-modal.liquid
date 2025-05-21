@@ -1,0 +1,286 @@
+{{ 'quiz-modal.css' | asset_url | stylesheet_tag }}
+
+<div id="quiz-modal-wrapper" class="quiz-modal__wrapper">
+  <div class="quiz-modal__content" role="dialog" aria-modal="true">
+    <button class="quiz-modal__close" aria-label="Close Modal">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.6001 2.33055C29.7269 2.20378 29.8275 2.05328 29.8961 1.88764C29.9647 1.72201 30 1.54448 30 1.3652C30 1.18592 29.9647 1.0084 29.8961 0.842762C29.8275 0.677128 29.7269 0.526629 29.6001 0.399858C29.4734 0.273087 29.3229 0.172528 29.1572 0.10392C28.9916 0.0353121 28.8141 0 28.6348 0C28.4555 0 28.278 0.0353121 28.1124 0.10392C27.9467 0.172528 27.7962 0.273087 27.6695 0.399858L15 13.072L2.33055 0.399858C2.20378 0.273087 2.05328 0.172528 1.88764 0.10392C1.72201 0.0353121 1.54448 1.33575e-09 1.3652 0C1.18592 -1.33575e-09 1.0084 0.0353121 0.842762 0.10392C0.677128 0.172528 0.526629 0.273087 0.399858 0.399858C0.273087 0.526629 0.172528 0.677128 0.10392 0.842762C0.0353121 1.0084 -1.33575e-09 1.18592 0 1.3652C1.33575e-09 1.54448 0.0353121 1.72201 0.10392 1.88764C0.172528 2.05328 0.273087 2.20378 0.399858 2.33055L13.072 15L0.399858 27.6695C0.143833 27.9255 0 28.2727 0 28.6348C0 28.9969 0.143833 29.3441 0.399858 29.6001C0.655883 29.8562 1.00313 30 1.3652 30C1.72728 30 2.07452 29.8562 2.33055 29.6001L15 16.928L27.6695 29.6001C27.9255 29.8562 28.2727 30 28.6348 30C28.9969 30 29.3441 29.8562 29.6001 29.6001C29.8562 29.3441 30 28.9969 30 28.6348C30 28.2727 29.8562 27.9255 29.6001 27.6695L16.928 15L29.6001 2.33055Z" fill="black"/>
+      </svg>
+    </button>
+    <form class="quiz-modal__form">
+      <div class="quiz-modal__step quiz-modal__step--1 show">
+        <div class="quiz-modal__progress-wrapper">
+          <h3 class="quiz-modal__progress-title">Let’s Start</h3>
+          <div class="quiz-modal__progress">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="quiz-modal__body">
+          <h3 class="quiz-modal__body-title">How old are you?</h3>
+          <ul class="quiz-modal__buttons">
+            <li>
+              <label class="quiz-modal__button">
+                <input class="quiz-modal__input" type="radio" name="quiz-step-1">
+                <span class="quiz-modal__span">
+                  <p class="quiz-modal__input-text">21-30</p>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="quiz-modal__button">
+                <input class="quiz-modal__input" type="radio" name="quiz-step-1">
+                <span class="quiz-modal__span">
+                  <p class="quiz-modal__input-text">31-40</p>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="quiz-modal__button">
+                <input class="quiz-modal__input" type="radio" name="quiz-step-1">
+                <span class="quiz-modal__span">
+                  <p class="quiz-modal__input-text">41-50</p>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="quiz-modal__button">
+                <input class="quiz-modal__input" type="radio" name="quiz-step-1">
+                <span class="quiz-modal__span">
+                  <p class="quiz-modal__input-text">51+</p>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quiz-modal__navigation">
+          <button type="button" class="quiz-modal__btn-next btn btn-pink">Next</button>
+        </div>
+      </div>
+
+      <div class="quiz-modal__step quiz-modal__step--2">
+        <div class="quiz-modal__progress-wrapper">
+          <h3 class="quiz-modal__progress-title">Almost there</h3>
+          <div class="quiz-modal__progress">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="quiz-modal__body">
+          <h3 class="quiz-modal__body-title">Are you a current user of Kratom or opiates?</h3>
+          <ul class="quiz-modal__buttons">
+            <li>
+              <label class="quiz-modal__button">
+                <input class="quiz-modal__input" type="radio" name="quiz-step-2">
+                <span class="quiz-modal__span">
+                  <p class="quiz-modal__input-text">Yes</p>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="quiz-modal__button">
+                <input class="quiz-modal__input" type="radio" name="quiz-step-2">
+                <span class="quiz-modal__span">
+                  <p class="quiz-modal__input-text">No</p>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quiz-modal__navigation">
+          <button type="button" class="quiz-modal__btn-back">
+            <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.22539 13.1597C6.8593 13.5184 6.26567 13.5184 5.89958 13.1597L0.27457 7.64951C-0.0915247 7.29088 -0.0915247 6.70937 0.27457 6.35075L5.89958 0.840536C6.26567 0.481913 6.8593 0.481913 7.22539 0.840536C7.59149 1.19916 7.59149 1.78067 7.22539 2.13929L3.20079 6.08176L14.0625 6.08176C14.5803 6.08176 15 6.49291 15 7.00013C15 7.50734 14.5803 7.9185 14.0625 7.9185L3.20079 7.9185L7.22539 11.861C7.59149 12.2196 7.59149 12.8011 7.22539 13.1597Z"></path>
+            </svg>
+
+            <span class="text"> Previous </span>
+          </button>
+          <button type="button" class="quiz-modal__btn-next btn btn-pink">Next</button>
+        </div>
+      </div>
+
+      <div class="quiz-modal__step quiz-modal__step--3">
+        <div class="quiz-modal__progress-wrapper">
+          <h3 class="quiz-modal__progress-title">One more</h3>
+          <div class="quiz-modal__progress">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="quiz-modal__body">
+          <h3 class="quiz-modal__body-title">Do you currently suffer from pain?</h3>
+          <ul class="quiz-modal__buttons">
+            <li>
+              <label class="quiz-modal__button">
+                <input class="quiz-modal__input" type="radio" name="quiz-step-3">
+                <span class="quiz-modal__span">
+                  <p class="quiz-modal__input-text">Yes</p>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="quiz-modal__button">
+                <input class="quiz-modal__input" type="radio" name="quiz-step-3">
+                <span class="quiz-modal__span">
+                  <p class="quiz-modal__input-text">No</p>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quiz-modal__navigation">
+          <button type="button" class="quiz-modal__btn-back">
+            <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.22539 13.1597C6.8593 13.5184 6.26567 13.5184 5.89958 13.1597L0.27457 7.64951C-0.0915247 7.29088 -0.0915247 6.70937 0.27457 6.35075L5.89958 0.840536C6.26567 0.481913 6.8593 0.481913 7.22539 0.840536C7.59149 1.19916 7.59149 1.78067 7.22539 2.13929L3.20079 6.08176L14.0625 6.08176C14.5803 6.08176 15 6.49291 15 7.00013C15 7.50734 14.5803 7.9185 14.0625 7.9185L3.20079 7.9185L7.22539 11.861C7.59149 12.2196 7.59149 12.8011 7.22539 13.1597Z"></path>
+            </svg>
+
+            <span class="text"> Previous </span>
+          </button>
+          <button type="button" class="quiz-modal__btn-next btn btn-pink">Next</button>
+        </div>
+      </div>
+
+      <div class="quiz-modal__step quiz-modal__step--4">
+        <div class="quiz-modal__progress-wrapper">
+          <h3 class="quiz-modal__progress-title">Last one</h3>
+          <div class="quiz-modal__progress">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="quiz-modal__body">
+          <h3 class="quiz-modal__body-title">Do you currently suffer from anxiety or depression?</h3>
+          <ul class="quiz-modal__buttons">
+            <li>
+              <label class="quiz-modal__button">
+                <input class="quiz-modal__input" type="radio" name="quiz-step-4">
+                <span class="quiz-modal__span">
+                  <p class="quiz-modal__input-text">Yes</p>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="quiz-modal__button">
+                <input class="quiz-modal__input" type="radio" name="quiz-step-4">
+                <span class="quiz-modal__span">
+                  <p class="quiz-modal__input-text">No</p>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quiz-modal__navigation">
+          <button type="button" class="quiz-modal__btn-back">
+            <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.22539 13.1597C6.8593 13.5184 6.26567 13.5184 5.89958 13.1597L0.27457 7.64951C-0.0915247 7.29088 -0.0915247 6.70937 0.27457 6.35075L5.89958 0.840536C6.26567 0.481913 6.8593 0.481913 7.22539 0.840536C7.59149 1.19916 7.59149 1.78067 7.22539 2.13929L3.20079 6.08176L14.0625 6.08176C14.5803 6.08176 15 6.49291 15 7.00013C15 7.50734 14.5803 7.9185 14.0625 7.9185L3.20079 7.9185L7.22539 11.861C7.59149 12.2196 7.59149 12.8011 7.22539 13.1597Z"></path>
+            </svg>
+
+            <span class="text"> Previous </span>
+          </button>
+          <button type="button" class="quiz-modal__btn-next btn btn-pink">Finish</button>
+        </div>
+      </div>
+
+      <div class="quiz-modal__step quiz-modal__step--5">
+        <div class="quiz-modal__progress-wrapper">
+          <h3 class="quiz-modal__progress-title">Get your free Sample</h3>
+          <div class="quiz-modal__progress">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="quiz-modal__body">
+          <h3 class="quiz-modal__body-title">Fill in the required information and receive your free sample</h3>
+          <ul class="quiz-modal__buttons">
+            <li>
+              <div class="quiz-modal__input-field">
+                <input placeholder="Name" type="text">
+              </div>
+            </li>
+            <li>
+              <div class="quiz-modal__input-field">
+                <input placeholder="Phone number" type="number">
+              </div>
+            </li>
+            <li>
+              <div class="quiz-modal__input-field">
+                <input placeholder="Shipping address" type="text">
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quiz-modal__navigation">
+          <button class="quiz-modal__btn-next btn btn-blue" type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const modalWrapper = document.getElementById('quiz-modal-wrapper');
+    const modalContent = modalWrapper.querySelector('.quiz-modal__content');
+    const closeBtn = modalWrapper.querySelector('.quiz-modal__close');
+
+    document.querySelectorAll('.quiz-starter__link').forEach((button) => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        modalWrapper.classList.add('active');
+        document.body.classList.add('overflow-hidden'); // необязательно, но может пригодиться
+      });
+    });
+
+    modalWrapper.addEventListener('click', (e) => {
+      if (!modalContent.contains(e.target)) {
+        closeModal();
+      }
+    });
+
+    closeBtn.addEventListener('click', () => {
+      closeModal();
+    });
+
+    function closeModal() {
+      modalWrapper.classList.remove('active');
+
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    /* steps*/
+    const steps = document.querySelectorAll('.quiz-modal__step');
+    const nextButtons = document.querySelectorAll('.quiz-modal__btn-next');
+    const backButtons = document.querySelectorAll('.quiz-modal__btn-back');
+
+    let currentStep = 0;
+
+    function showStep(index) {
+      steps.forEach((step) => step.classList.remove('show'));
+      steps[index].classList.add('show');
+    }
+
+    nextButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        if (currentStep < steps.length - 1) {
+          currentStep++;
+          showStep(currentStep);
+        }
+      });
+    });
+
+    backButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        if (currentStep > 0) {
+          currentStep--;
+          showStep(currentStep);
+        }
+      });
+    });
+  });
+</script>

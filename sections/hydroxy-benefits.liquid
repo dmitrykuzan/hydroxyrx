@@ -1,0 +1,85 @@
+{{ 'hydroxy-benefits.css' | asset_url | stylesheet_tag }}
+
+<section class="hydroxy-benefits page-width">
+  <div class="hydroxy-benefits__wrapper">
+    <div class="hydroxy-benefits__titles">
+      <h2 class="hydroxy-benefits__title"><span>Top Use Cases:</span> When to Take HydroxyRX</h2>
+      <p class="hydroxy-benefits__subtitle">
+        Whether you need calm focus or a relaxed state of mind, HydroxyRX adapts to your lifestyle — without the crash,
+        fog, or jitters of other products.
+      </p>
+    </div>
+
+    <ul class="hydroxy-benefits__list">
+      <li class="hydroxy-benefits__item">
+        <div class="hydroxy-benefits__item-body">
+          <h3 class="hydroxy-benefits__item-title">For Focus at Work</h3>
+          <span class="hydroxy-benefits__item-icon">
+            <img src="{{ 'icon-benefits-1.png' | asset_url }}" width="80" height="80" alt="Icon">
+          </span>
+        </div>
+
+        <p class="hydroxy-benefits__description">
+          Get into deep work mode without caffeine overload. HydroxyRX helps you stay centered, alert, and
+          distraction-free — perfect for long tasks and creative flow.
+        </p>
+      </li>
+
+      <li class="hydroxy-benefits__item">
+        <div class="hydroxy-benefits__item-body">
+          <h3 class="hydroxy-benefits__item-title">To Wind Down in the Evening</h3>
+
+          <span class="hydroxy-benefits__item-icon">
+            <img src="{{ 'icon-benefits-2.png' | asset_url }}" width="80" height="80" alt="Icon">
+          </span>
+        </div>
+
+        <p class="hydroxy-benefits__description">
+          Unplug without feeling knocked out. Take HydroxyRX after a long day to release tension and ease into a calm,
+          natural state — no grogginess the next morning.
+        </p>
+      </li>
+
+      <li class="hydroxy-benefits__item">
+        <div class="hydroxy-benefits__item-body">
+          <h3 class="hydroxy-benefits__item-title">For Social Confidence</h3>
+
+          <span class="hydroxy-benefits__item-icon">
+            <img src="{{ 'icon-benefits-3.png' | asset_url }}" width="44" height="80" alt="Icon">
+          </span>
+        </div>
+
+        <p class="hydroxy-benefits__description">
+          If social settings make you anxious, HydroxyRX helps you feel relaxed, open, and present — all while staying
+          sharp and in control.
+        </p>
+      </li>
+
+      <li class="hydroxy-benefits__item">
+        <div class="hydroxy-benefits__item-body">
+          <h3 class="hydroxy-benefits__item-title">To Bounce Back After a Stressful Day</h3>
+
+          <span class="hydroxy-benefits__item-icon">
+            <img src="{{ 'icon-benefits-4.png' | asset_url }}" width="80" height="80" alt="Icon">
+          </span>
+        </div>
+        <p class="hydroxy-benefits__description">
+          For those high-anxiety moments or emotionally exhausting days, HydroxyRX helps rebalance your mood and bring
+          you back to center — naturally.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hydroxy Benefits",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Hydroxy Benefits"
+    }
+  ]
+}
+{% endschema %}

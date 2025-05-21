@@ -1,0 +1,344 @@
+.quiz-modal__wrapper {
+  position: fixed;
+  display: flex;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s linear, visibility 0.3s linear;
+}
+
+.quiz-modal__wrapper.active {
+  opacity: 1;
+  visibility: visible;
+   z-index: 9999;
+}
+
+.quiz-modal__content {
+  background-color: #F3F3F3;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  max-width: 95rem;
+  width: 100%;
+  border-radius: 2rem;
+  position: relative;
+}
+
+
+
+.quiz-modal__close {
+  display: flex;
+  align-items: center;
+  background: initial;
+  border: initial;
+  cursor: pointer;
+  padding: initial;
+  width: 2rem;
+  height: 2rem;
+  margin-left: auto;
+  transition: transform 0.2s linear;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.quiz-modal__close:hover {
+  transform: rotate(-90deg);
+}
+
+.quiz-modal__step {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.quiz-modal__step.show {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+.quiz-modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.quiz-modal__body-title {
+  font-weight: 500;
+  line-height: 133%;
+  font-size: 2.2rem;
+  text-align: center;
+  margin: initial;
+}
+
+
+
+/* */
+
+.quiz-modal__progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quiz-modal__progress-title {
+  margin: initial;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.quiz-modal__progress {
+  position: relative;
+  background-color: #D9D9D9;
+  height: 0.8rem;
+  width: 100%;
+  border-radius: 10rem;
+  
+  span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0.8rem;
+    background-color: #D5286F;
+    border-radius: 10rem;
+  }
+}
+
+.quiz-modal__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding: initial;
+  margin: initial;
+}
+
+.quiz-modal__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: initial;
+  margin: initial;
+}
+
+.quiz-modal__input-field {
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  border: 0.1rem solid #E4E4E4;
+  min-width: 22rem;
+
+  input {
+    border: initial;
+    outline: none;
+    box-shadow: initial;
+    height: 4.5rem;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+  }
+}
+
+.quiz-modal__input-field:focus-within {
+  border: 0.1rem solid #bbb7b7;
+}
+
+.quiz-modal__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 16rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+
+.quiz-modal__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+
+.quiz-modal__span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 3rem;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 0.1rem solid #7A7A7A;
+  transition: background-color 0.3s linear, border 0.3s linear, box-shadow 0.3s linear;
+}
+
+.quiz-modal__span:hover {
+   border: 0.1rem solid transparent;
+  box-shadow: 0 4px 10px rgba(213, 40, 111, 0.7), 0 2px 5px rgba(213, 40, 111, 0.7);
+}
+
+
+.quiz-modal__input-text {
+  color: #000;
+  z-index: 1;
+  margin: initial;
+  margin-left: auto;
+  margin-right: auto;
+  transition: color 0.3s linear;
+}
+
+.quiz-modal__input:checked + .quiz-modal__span {
+  background-color: #379AC9;
+  border: 0.1rem solid transparent;
+  box-shadow: initial;
+
+  .quiz-modal__input-text {
+    color: #fff;
+  }
+}
+
+.quiz-modal__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 3rem;
+}
+
+.quiz-modal__btn-back {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: initial;
+  border: initial;
+  padding: initial;
+  cursor: pointer;
+
+  svg {
+    fill: #D5286F;
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: color 0.3s linear;
+    line-height: 100%;
+  }
+}
+
+.quiz-modal__btn-next {
+  max-width: 21rem;
+}
+
+.quiz-modal__btn-back:hover {
+  .text {
+    color: #D5286F;
+  }
+}
+
+/* steps*/
+
+.quiz-modal__step--1 {
+  .quiz-modal__progress {
+    span {
+      width: 20%;
+    }
+  }
+}
+
+.quiz-modal__step--2 {
+  .quiz-modal__progress {
+    span {
+      width: 40%;
+    }
+  }
+}
+
+.quiz-modal__step--3 {
+  .quiz-modal__progress {
+    span {
+      width: 60%;
+    }
+  }
+}
+
+.quiz-modal__step--4 {
+  .quiz-modal__progress {
+    span {
+      width: 80%;
+    }
+  }
+}
+
+.quiz-modal__step--5 {
+  .quiz-modal__progress {
+    span {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .quiz-modal__buttons {
+    flex-direction: row;
+  }
+
+  .quiz-modal__body-title {
+    font-size: 3.2rem;
+  }
+
+  .quiz-modal__step {
+    gap: 5rem;
+  }
+
+  .quiz-modal__body {
+    gap: 3rem;
+  }
+
+  .quiz-modal__content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .quiz-modal__navigation {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .quiz-modal__step {
+    gap: 7rem;
+  }
+
+  .quiz-modal__body {
+    gap: 4rem;
+  }
+
+  .quiz-modal__progress-title {
+    font-size: 2.4rem;
+  }
+
+  .quiz-modal__body-title {
+    font-size: 4.2rem;
+  }
+}
