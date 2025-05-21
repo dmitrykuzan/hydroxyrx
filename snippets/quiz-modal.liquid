@@ -276,6 +276,21 @@
               <div class="quiz-modal__input-field">
                 <input placeholder="Name" type="text" name="contact[name]" id="input-name">
               </div>
+
+              <div class="field field--with-error">
+                {%- if form.errors contains 'name' -%}
+                  <small class="contact__field-error" id="ContactForm-name-error">
+                    <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                    <span class="form__message">
+                      <span class="svg-wrapper">
+                        {{- 'icon-error.svg' | inline_asset_content -}}
+                      </span>
+                      {{- form.errors.translated_fields.name | capitalize }}
+                      {{ form.errors.messages.name -}}
+                    </span>
+                  </small>
+                {%- endif -%}
+              </div>
             </li>
             <li>
               <div class="quiz-modal__input-field">
