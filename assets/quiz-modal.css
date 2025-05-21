@@ -14,12 +14,16 @@
 
   .form__message {
     margin-top: initial;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .form-status-list {
     margin-top: initial;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .field--with-error::before, .field--with-error::after {
+    display: none;
   }
 }
 

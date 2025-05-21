@@ -114,6 +114,11 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  .product-form__submit {
+    background-color: #379AC9;
+    max-width: 50rem;
+  }
 }
 
 @media screen and (min-width: 767px) {
