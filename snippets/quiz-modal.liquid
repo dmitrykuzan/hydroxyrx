@@ -217,6 +217,24 @@
         <div class="quiz-modal__navigation">
           <button class="quiz-modal__btn-next btn btn-blue" type="submit">Submit</button>
         </div>
+
+        {% form 'contact' %}
+          {{ form.errors | default_errors }}
+
+          <div class="first-name">
+            <label for="first-name">First name</label>
+            <input type="text" name="contact[first_name]" id="first-name">
+          </div>
+
+          <div class="last-name">
+            <label for="last-name">Last name</label>
+            <input type="text" name="contact[last_name]" id="last-name">
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Create">
+          </div>
+        {% endform %}
       </div>
     </form>
   </div>
