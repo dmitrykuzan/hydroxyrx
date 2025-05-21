@@ -8,13 +8,17 @@
   visibility: hidden;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s linear, visibility 0.3s linear;
+  transition: opacity 0.3s linear, visibility 0.3s linear, z-index 0.3s linear;
 }
 
 .quiz-modal__wrapper.active {
   opacity: 1;
   visibility: visible;
-   z-index: 9999;
+  z-index: 9999;
+
+  .quiz-modal__content {
+    transform: translateY(0);
+  }
 }
 
 .quiz-modal__content {
@@ -29,8 +33,10 @@
   width: 100%;
   border-radius: 2rem;
   position: relative;
-}
 
+  transition: transform 0.3s linear;
+  transform: translateY(-100%);
+}
 
 
 .quiz-modal__close {
