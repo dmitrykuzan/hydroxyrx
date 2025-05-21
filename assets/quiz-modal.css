@@ -137,6 +137,8 @@
   margin: initial;
 }
 
+
+
 .quiz-modal__inputs {
   display: flex;
   flex-direction: column;
@@ -151,7 +153,8 @@
   background-color: #fff;
   border-radius: 1.5rem;
   border: 0.1rem solid #E4E4E4;
-  min-width: 22rem;
+  transition: border 0.3s linear;
+  width: 100%;
 
   input {
     border: initial;
@@ -306,10 +309,30 @@
   }
 }
 
+ .quiz-modal__buttons-grid {
+   li {
+    width: 100%;
+   }
+  }
+
+@media screen and (min-width: 575px) {
+  .quiz-modal__buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 70rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
 @media screen and (min-width: 992px) {
   .quiz-modal__buttons {
     flex-direction: row;
   }
+
+
 
   .quiz-modal__body-title {
     font-size: 3.2rem;
