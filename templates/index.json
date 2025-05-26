@@ -120,11 +120,6 @@
       "name": "FAQ Section (with image)",
       "settings": {}
     },
-    "ticker_CECxQX": {
-      "type": "ticker",
-      "name": "Ticker Text",
-      "settings": {}
-    },
     "video_slider_6Fhz9q": {
       "type": "video-slider",
       "blocks": {
@@ -218,6 +213,11 @@
       "name": "FAQ Section (with text)",
       "settings": {}
     },
+    "ticker_CECxQX": {
+      "type": "ticker",
+      "name": "Ticker Text",
+      "settings": {}
+    },
     "featured_blog_whTpnF": {
       "type": "featured-blog",
       "name": "t:sections.featured-blog.presets.name",
@@ -243,9 +243,9 @@
     "hero_aBgLWt",
     "about_hydroxy_eTPMJ6",
     "faq_with_image_9bCUDm",
-    "ticker_CECxQX",
     "video_slider_6Fhz9q",
     "faq_with_text_iz9ydH",
+    "ticker_CECxQX",
     "featured_blog_whTpnF"
   ]
 }
