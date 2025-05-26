@@ -78,10 +78,6 @@ html {
   --shadow-visible: var(--media-shadow-visible);
 }
 
-.blog__view-all {
-  display: none;
-}
-
 
 /* ui button */
 .btn {
