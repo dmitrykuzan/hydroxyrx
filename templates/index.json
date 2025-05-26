@@ -183,6 +183,13 @@
     "faq_with_text_iz9ydH": {
       "type": "faq-with-text",
       "blocks": {
+        "faq_item_AYUhdM": {
+          "type": "faq_item",
+          "settings": {
+            "title": "What is 7-hydroxymitragynine and how does it work?",
+            "text": "<p>7-Hydroxymitragynine is the most potent opioid-active alkaloid in kratom and acts as a partial agonist at          μ-opioid receptors, with high binding affinity.<br/><br/>  Mitragynine, while more abundant, is less potent but still contributes to analgesic effects. It is              considered a G-protein biased agonist, meaning it activates pain-relieving pathways without strongly              triggering the β-arrestin-2 pathway (which is responsible for many opioid side effects like respiratory              depression and constipation).</p><p> Neither compound strongly activates the κ-opioid or δ-opioid receptors, which helps explain the euphoria              and pain relief with minimal dysphoria in most kratom users.<br/><br/>  Kratom’s unique pharmacology lies in this partial, biased agonism at MOR with relatively clean receptor              selectivity, offering potential for pain relief with fewer side effects.</p>"
+          }
+        },
         "faq_item_fAEJYh": {
           "type": "faq_item",
           "settings": {
@@ -220,6 +227,7 @@
         }
       },
       "block_order": [
+        "faq_item_AYUhdM",
         "faq_item_fAEJYh",
         "faq_item_K6j3Cp",
         "faq_item_LQ7cHM",
