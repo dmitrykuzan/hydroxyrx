@@ -116,6 +116,7 @@
         "faq_item_atn4Mx",
         "faq_item_t4rMBX"
       ],
+      "disabled": true,
       "name": "FAQ Section (with image)",
       "settings": {}
     },
@@ -155,7 +156,10 @@
         "video_slide_CXRANN"
       ],
       "name": "Video Review Slider",
-      "settings": {}
+      "settings": {
+        "title": "",
+        "subtitle": ""
+      }
     },
     "featured_blog_whTpnF": {
       "type": "featured-blog",
