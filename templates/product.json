@@ -108,6 +108,11 @@
       "name": "Volufiline purchase",
       "settings": {}
     },
+    "hydroxy_benefits_CYWj7U": {
+      "type": "hydroxy-benefits",
+      "name": "Hydroxy Benefits",
+      "settings": {}
+    },
     "hydroxy_review_rating_fQ4QcB": {
       "type": "hydroxy-review-rating",
       "name": "hydroxy Rating",
@@ -207,10 +212,36 @@
         "padding_bottom": 28
       }
     },
-    "hydroxy_benefits_CYWj7U": {
-      "type": "hydroxy-benefits",
-      "name": "Hydroxy Benefits",
-      "settings": {}
+    "rich_text_Byk744": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HRay4A": {
+          "type": "heading",
+          "settings": {
+            "heading": "FDA & Legal Disclaimer",
+            "heading_size": "h2"
+          }
+        },
+        "text_y7tTGY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The statements made on this website and the products sold by HydroxyRx have not been evaluated by the U.S. Food and Drug Administration (FDA). These products are not intended to diagnose, treat, cure, or prevent any disease or medical condition. HydroxyRx products contain 7-hydroxymitragynine, a potent natural alkaloid derived from the kratom plant (Mitragyna speciosa), and are intended strictly for research, novelty, or botanical reference purposes. They are not for internal use or human consumption. Use of this product may carry a risk of dependency or addiction. By purchasing from our site, you confirm that you are at least 21 years of age and accept full responsibility for the use of these products in compliance with all applicable local, state, and federal laws.  Use of this product may carry a risk of habit formation or addiction. By purchasing and/or using any HydroxyRx product, you agree that you are doing so at your own risk. Always consult with a licensed medical professional or health care provider before handling or working with this product.  Do not take if pregnant or nursing.  <br/><br/>Due to legal restrictions, we do not ship to the following U.S. states: Alabama, Arkansas, Indiana, Rhode Island, Vermont, and Wisconsin. We also do not ship to the following cities and municipalities: San Diego, CA; Oceanside, CA; Denver, CO; Sarasota County, FL; and Jerseyville, IL. Kratom and its alkaloids, including 7-hydroxymitragynine, have not been approved by the FDA as dietary supplements, medications, or food additives. Please read all product warnings and labels carefully before handling.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HRay4A",
+        "text_y7tTGY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -220,6 +251,7 @@
     "hydroxy_benefits_CYWj7U",
     "hydroxy_review_rating_fQ4QcB",
     "custom_review_UthtkC",
-    "related-products"
+    "related-products",
+    "rich_text_Byk744"
   ]
 }
