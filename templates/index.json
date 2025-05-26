@@ -161,25 +161,6 @@
         "subtitle": ""
       }
     },
-    "featured_blog_whTpnF": {
-      "type": "featured-blog",
-      "name": "t:sections.featured-blog.presets.name",
-      "settings": {
-        "blog": "news",
-        "post_limit": 3,
-        "heading": "Latest News",
-        "heading_size": "h0",
-        "subheading": "Stay Informed. Stay Ahead. Discover the latest research, product updates, and wellness insights from the world of HydroxyRX — because informed choices lead to better results.",
-        "columns_desktop": 3,
-        "show_view_all": true,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 100,
-        "padding_bottom": 0
-      }
-    },
     "faq_with_text_iz9ydH": {
       "type": "faq-with-text",
       "blocks": {
@@ -236,6 +217,25 @@
       ],
       "name": "FAQ Section (with text)",
       "settings": {}
+    },
+    "featured_blog_whTpnF": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "blog": "news",
+        "post_limit": 3,
+        "heading": "Latest News",
+        "heading_size": "h0",
+        "subheading": "Stay Informed. Stay Ahead. Discover the latest research, product updates, and wellness insights from the world of HydroxyRX — because informed choices lead to better results.",
+        "columns_desktop": 3,
+        "show_view_all": true,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
@@ -245,7 +245,7 @@
     "faq_with_image_9bCUDm",
     "ticker_CECxQX",
     "video_slider_6Fhz9q",
-    "featured_blog_whTpnF",
-    "faq_with_text_iz9ydH"
+    "faq_with_text_iz9ydH",
+    "featured_blog_whTpnF"
   ]
 }
