@@ -228,7 +228,7 @@
         "heading_size": "h0",
         "subheading": "Stay Informed. Stay Ahead. Discover the latest research, product updates, and wellness insights from the world of HydroxyRX — because informed choices lead to better results.",
         "columns_desktop": 3,
-        "show_view_all": true,
+        "show_view_all": false,
         "show_image": true,
         "show_date": true,
         "show_author": false,
