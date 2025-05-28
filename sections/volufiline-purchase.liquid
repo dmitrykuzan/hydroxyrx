@@ -1,4 +1,4 @@
-{{ 'volufiline-purchase.css' | asset_url | stylesheet_tag }}
+{{ 'hydroxy-purchase.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
@@ -13,12 +13,12 @@
 
 {% comment %} new {% endcomment %}
 
-<section class="volufiline-purchase page-width" id="VideoSlider{{ section.id }}">
-  <div class="volufiline-purchase__wrapper">
-    <div class="volufiline-purchase__content">
-      <div class="volufiline-purchase__titles">
+<section class="hydroxy-purchase page-width" id="VideoSlider{{ section.id }}">
+  <div class="hydroxy-purchase__wrapper">
+    <div class="hydroxy-purchase__content">
+      <div class="hydroxy-purchase__titles">
         <h2>Science-backed cognitive support — without the compromises</h2>
-        <div class="volufiline-purchase__text">
+        <div class="hydroxy-purchase__text">
           <p>
             Our formula uses targeted alkaloids studied for their effects on focus, energy, and emotional balance.
             Developed with safety and long-term health in mind, it offers a clean alternative to synthetic stimulants
@@ -27,10 +27,10 @@
         </div>
       </div>
 
-      <div class="volufiline-purchase__cta">
-        <span class="volufiline-purchase__quantity-label">Ready to purchase yours?</span>
-        <div class="volufiline-purchase__quantity-wrapper">
-          <div class="volufiline-purchase__quantity">
+      <div class="hydroxy-purchase__cta">
+        <span class="hydroxy-purchase__quantity-label">Ready to purchase yours?</span>
+        <div class="hydroxy-purchase__quantity-wrapper">
+          <div class="hydroxy-purchase__quantity">
             {% assign product = all_products['7-hydroxymitragynine'] %}
             {%- assign product_form_id = 'product-form-' | append: section.id -%}
             <div
@@ -244,7 +244,7 @@
             </div>
           </div>
 
-          <div class="volufiline-purchase__buy">
+          <div class="hydroxy-purchase__buy">
             {%- render 'buy-buttons',
               product: product,
               product_form_id: product_form_id,
@@ -256,7 +256,7 @@
       </div>
     </div>
 
-    <div class="volufiline-purchase__image">
+    <div class="hydroxy-purchase__image">
       <img src="{{ 'hydroxy-purchase.jpg' | asset_url }}" width="877" height="877">
     </div>
   </div>
