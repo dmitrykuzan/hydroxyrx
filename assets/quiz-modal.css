@@ -304,6 +304,10 @@
   max-width: 21rem;
 }
 
+.submit-btn:disabled {
+  opacity: 0.3;
+}
+
 .quiz-modal__btn-back:hover {
   .text {
     color: #D5286F;
