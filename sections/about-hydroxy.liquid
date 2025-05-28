@@ -3,7 +3,7 @@
 <section class="about-hydroxy page-width">
   <div class="about-hydroxy__wrapper">
     <div class="about-hydroxy-title">
-      {% comment %} <h2>What is 7-hydroxymitragynine and how does it work?</h2> {% endcomment %}
+      <h2>{{ section.settings.title }}</h2>
       <div class="about-hydroxy-logo">
         <img src="{{ 'hydroxy-logo.png' | asset_url }}" width="229" height="30" alt="logo hydroxyrx">
       </div>
@@ -11,47 +11,30 @@
 
     <div class="about-hydroxy__body">
       <div class="about-hydroxy__content">
-        <p class="about-hydroxy__content-description">
-          7-Hydroxymitragynine is the most potent opioid-active alkaloid in kratom and acts as a partial agonist at
-          μ-opioid receptors, with high binding affinity.
-        </p>
+        <div class="about-hydroxy__content-description">
+          {{ section.settings.description }}
+        </div>
 
-        <ul class="about-hydroxy__list">
-          <li class="about-hydroxy__item">
-            <span>
-              <img src="{{ 'about-icon-1.png' | asset_url }}" width="70" height="70" alt="Icon">
-            </span>
-            <p>
-              Mitragynine, while more abundant, is less potent but still contributes to analgesic effects. It is
-              considered a G-protein biased agonist, meaning it activates pain-relieving pathways without strongly
-              triggering the β-arrestin-2 pathway (which is responsible for many opioid side effects like respiratory
-              depression and constipation).
-            </p>
-          </li>
-          <li class="about-hydroxy__item">
-            <span>
-              <img src="{{ 'about-icon-2.png' | asset_url }}" width="70" height="70" alt="Icon">
-            </span>
-            <p>
-              Neither compound strongly activates the κ-opioid or δ-opioid receptors, which helps explain the euphoria
-              and pain relief with minimal dysphoria in most kratom users.
-            </p>
-          </li>
-          <li class="about-hydroxy__item">
-            <span>
-              <img src="{{ 'about-icon-3.png' | asset_url }}" width="70" height="70" alt="Icon">
-            </span>
-            <p>
-              Kratom’s unique pharmacology lies in this partial, biased agonism at MOR with relatively clean receptor
-              selectivity, offering potential for pain relief with fewer side effects.
-            </p>
-          </li>
-        </ul>
-
-        <a class="about-hydroxy__link btn btn-blue" href="{{ all_products['7-hydroxymitragynine'].url }}"> Shop now</a>
+        <a class="about-hydroxy__link btn btn-blue" href="{{ all_products['7-hydroxymitragynine'].url }}"> Shop now </a>
       </div>
       <div class="about-hydroxy__image">
-        <img src="{{ 'about-hydroxy-flora.jpg' | asset_url }}" width="700" height="530" alt="Flower pictures">
+        {% if section.settings.image != blank %}
+          <img
+            src="{{ section.settings.image | image_url: width: 700 }}"
+            width="700"
+            height="530"
+            loading="lazy"
+            alt="Flower pictures"
+          >
+        {% else %}
+          <img
+            src="{{ 'about-hydroxy-flora.jpg' | asset_url }}"
+            width="700"
+            height="530"
+            loading="lazy"
+            alt="Flower pictures"
+          >
+        {% endif %}
       </div>
     </div>
   </div>
@@ -60,7 +43,25 @@
 {% schema %}
 {
   "name": "About Hydroxy",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Заголовок",
+      "default": "title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Описание",
+      "default": "<p>description</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Изображение"
+    }
+  ],
   "presets": [
     {
       "name": "About Hydroxy"
