@@ -73,31 +73,30 @@
         "video_slide_bWjMPm": {
           "type": "video_slide",
           "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/152c296161214d1aa3ee22b916751da9.mp4",
-            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-1.jpg?v=1747322028"
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/f360d63345d948b3915f5ee158c65c32.mov",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/hydroxy-poster-1.jpg?v=1748429337"
           }
         },
-        "video_slide_gwYUUR": {
+        "video_slide_ib9B6L": {
           "type": "video_slide",
           "settings": {
-            "video_url": "",
-            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-3.jpg?v=1747322027"
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/f360d63345d948b3915f5ee158c65c32.mov",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/hydroxy-poster-1.jpg?v=1748429337"
           }
         },
-        "video_slide_naLnjm": {
+        "video_slide_K4QMai": {
           "type": "video_slide",
           "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/22ee860324744869b88cb064f74962ea.mp4",
-            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-2.jpg?v=1747322028"
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/f360d63345d948b3915f5ee158c65c32.mov",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/hydroxy-poster-1.jpg?v=1748429337"
           }
         }
       },
       "block_order": [
         "video_slide_bWjMPm",
-        "video_slide_gwYUUR",
-        "video_slide_naLnjm"
+        "video_slide_ib9B6L",
+        "video_slide_K4QMai"
       ],
-      "name": "Video Review Slider",
       "settings": {
         "title": "Real Talk: What You’ll Feel",
         "subtitle": "<p>We’ve helped <strong>60,000+</strong> customers </p>"
@@ -105,17 +104,14 @@
     },
     "volufiline_purchase_xqNgck": {
       "type": "volufiline-purchase",
-      "name": "Volufiline purchase",
       "settings": {}
     },
     "hydroxy_benefits_CYWj7U": {
       "type": "hydroxy-benefits",
-      "name": "Hydroxy Benefits",
       "settings": {}
     },
     "hydroxy_review_rating_fQ4QcB": {
       "type": "hydroxy-review-rating",
-      "name": "hydroxy Rating",
       "settings": {}
     },
     "custom_review_UthtkC": {
@@ -190,7 +186,6 @@
         "list_item_HRB8VP",
         "list_item_FUJFt9"
       ],
-      "name": "Custom Review List",
       "settings": {}
     },
     "related-products": {
@@ -233,7 +228,6 @@
         "heading_HRay4A",
         "text_y7tTGY"
       ],
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
