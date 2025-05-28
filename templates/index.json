@@ -159,29 +159,29 @@
         "video_slide_Wdwb33": {
           "type": "video_slide",
           "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/152c296161214d1aa3ee22b916751da9.mp4",
-            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-1.jpg?v=1747322028"
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/f360d63345d948b3915f5ee158c65c32.mov",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/hydroxy-poster-1.jpg?v=1748429337"
           }
         },
-        "video_slide_Mk8AEx": {
+        "video_slide_dTTEQU": {
           "type": "video_slide",
           "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/cedaffc53fe844a48565a257d640a23d.mp4",
-            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-3.jpg?v=1747322027"
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/f360d63345d948b3915f5ee158c65c32.mov",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/hydroxy-poster-1.jpg?v=1748429337"
           }
         },
-        "video_slide_CXRANN": {
+        "video_slide_A64TTj": {
           "type": "video_slide",
           "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/22ee860324744869b88cb064f74962ea.mp4",
-            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/poster-2.jpg?v=1747322028"
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/f360d63345d948b3915f5ee158c65c32.mov",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/hydroxy-poster-1.jpg?v=1748429337"
           }
         }
       },
       "block_order": [
         "video_slide_Wdwb33",
-        "video_slide_Mk8AEx",
-        "video_slide_CXRANN"
+        "video_slide_dTTEQU",
+        "video_slide_A64TTj"
       ],
       "settings": {
         "title": "",
