@@ -457,8 +457,38 @@
   }
 }
 
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 992px) {
   .quiz-modal__step--5 {
-    gap: 2rem;
+    gap: 1rem;
+
+    .quiz-modal__body {
+      gap: 1.5rem;
+    }
+
+    .quiz-modal__buttons {
+      gap: 1rem;
+    }
+
+    .quiz-modal__body-title {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .quiz-modal__step--5 {
+    gap: 1.5rem;
+
+    .quiz-modal__body {
+      gap: 2rem;
+    }
+
+    .quiz-modal__buttons {
+      gap: 1rem;
+    }
+
+    .quiz-modal__body-title {
+      font-size: 3rem;
+    }
   }
 }
