@@ -438,7 +438,7 @@
     //quiz
 
     //tel number validation
-    const form = document.getElementById('my-form');
+    const form = document.getElementById('QuizForm');
     const emailInput = document.getElementById('input-email');
     const confirmEmailInput = document.getElementById('input-confirm-email');
     const submitBtn = document.getElementById('submit-btn');
@@ -452,14 +452,13 @@
       const match = email === confirmEmail;
 
       if (!bothFilled) {
-        errorMessage.textContent = 'Пожалуйста, заполните оба поля email';
+        errorMessage.textContent = 'Please fill in both email fields';
         errorMessage.style.display = 'block';
         submitBtn.disabled = true;
         return false;
       }
 
       if (!match) {
-        errorMessage.textContent = 'Email-адреса не совпадают';
         errorMessage.style.display = 'block';
         submitBtn.disabled = true;
         return false;
