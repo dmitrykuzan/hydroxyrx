@@ -340,9 +340,11 @@
           </ul>
         </div>
 
-        <div id="email-error" style="color: red; display: none; font-size: 14px; margin-top: 5px;">
-          Emails do not match.
-        </div>
+        <div
+          id="email-error"
+          class="quiz-modal__email-error"
+          style="display: none;"
+        ></div>
 
         {%- if form.posted_successfully? -%}
           <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
@@ -444,6 +446,9 @@
     const submitBtn = document.getElementById('submit-btn');
     const errorMessage = document.getElementById('email-error');
 
+    const emailWrapper = emailInput.parentElement;
+    const confirmWrapper = confirmEmailInput.parentElement;
+
     function validateEmails() {
       const email = emailInput.value.trim().toLowerCase();
       const confirmEmail = confirmEmailInput.value.trim().toLowerCase();
@@ -454,16 +459,23 @@
       if (!bothFilled) {
         errorMessage.textContent = 'Please fill in both email fields';
         errorMessage.style.display = 'block';
+        emailWrapper.classList.add('error');
+        confirmWrapper.classList.add('error');
         submitBtn.disabled = true;
         return false;
       }
 
       if (!match) {
+        errorMessage.textContent = 'Emails do not match.';
         errorMessage.style.display = 'block';
+        emailWrapper.classList.add('error');
+        confirmWrapper.classList.add('error');
         submitBtn.disabled = true;
         return false;
       }
 
+      emailWrapper.classList.remove('error');
+      confirmWrapper.classList.remove('error');
       errorMessage.style.display = 'none';
       submitBtn.disabled = false;
       return true;

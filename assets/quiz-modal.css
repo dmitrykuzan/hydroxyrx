@@ -200,8 +200,18 @@
   }
 }
 
+.quiz-modal__input-field.error {
+  border: 0.1rem solid #ce1b1b;
+}
+
 .quiz-modal__input-field:focus-within {
   border: 0.1rem solid #bbb7b7;
+}
+
+.quiz-modal__email-error {
+  color: #ce1b1b;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 .quiz-modal__button {
@@ -369,6 +379,7 @@
 }
 
 .quiz-modal__step--5 {
+  gap: 2rem;
   .quiz-modal__progress {
     span {
       width: 100%;
@@ -439,11 +450,5 @@
 
   .quiz-modal__body-title {
     font-size: 4.2rem;
-  }
-}
-
-@media screen and (min-width: 1180px) {
-  .quiz-modal__step--5 {
-    gap: 2rem;
   }
 }
