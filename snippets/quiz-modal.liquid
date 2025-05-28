@@ -455,6 +455,7 @@
 
     //confirm e-mail
 
+    const form = document.getElementById('QuizForm');
     const emailInput = document.getElementById('input-email');
     const confirmEmailInput = document.getElementById('input-confirm-email');
     const submitBtn = document.getElementById('submit-btn');
@@ -467,20 +468,28 @@
       const bothFilled = email !== '' && confirmEmail !== '';
       const match = email === confirmEmail;
 
-      if (bothFilled && match) {
-        submitBtn.disabled = false;
-        errorMessage.style.display = 'none';
-      } else {
-        submitBtn.disabled = true;
-        if (bothFilled && !match) {
-          errorMessage.style.display = 'block';
-        } else {
-          errorMessage.style.display = 'none';
-        }
+      if (!bothFilled) {
+        errorMessage.textContent = 'Please fill in both email fields';
+        errorMessage.style.display = 'block';
+        return false;
       }
+
+      if (!match) {
+        errorMessage.style.display = 'block';
+        return false;
+      }
+
+      errorMessage.style.display = 'none';
+      return true;
     }
 
     emailInput.addEventListener('input', validateEmails);
     confirmEmailInput.addEventListener('input', validateEmails);
+
+    form.addEventListener('submit', function (e) {
+      if (!validateEmails()) {
+        e.preventDefault();
+      }
+    });
   });
 </script>
