@@ -298,25 +298,25 @@
 
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="Street:" type="text" name="contact[Street]" id="user-street">
+                <input placeholder="Street" type="text" name="contact[Street]" id="user-street">
               </div>
             </li>
 
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="City:" type="text" name="contact[City:]" id="user-city">
+                <input placeholder="City" type="text" name="contact[City:]" id="user-city">
               </div>
             </li>
 
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="State:" type="text" name="contact[State:]" id="user-state">
+                <input placeholder="State" type="text" name="contact[State:]" id="user-state">
               </div>
             </li>
 
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="Zip code:" type="text" name="contact[Zip code:]" id="user-zip">
+                <input placeholder="Zip code" type="text" name="contact[Zip code:]" id="user-zip">
               </div>
             </li>
 
@@ -443,10 +443,9 @@
     const phoneInput = document.getElementById('phone-number');
 
     phoneInput.addEventListener('input', function (e) {
-      let value = e.target.value.replace(/\D/g, ''); // Удаляем всё, кроме цифр
+      let value = e.target.value.replace(/\D/g, '');
 
-      if (value.length > 10) value = value.slice(0, 10); // Ограничиваем до 10 цифр
-
+      if (value.length > 10) value = value.slice(0, 10);
       let formatted = '';
 
       if (value.length > 0) formatted = '(' + value.substring(0, 3);
