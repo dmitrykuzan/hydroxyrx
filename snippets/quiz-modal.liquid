@@ -8,28 +8,6 @@
       </svg>
     </button>
     {%- form 'contact', id: 'QuizForm', class: 'quiz-modal__form' -%}
-      {%- if form.posted_successfully? -%}
-        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
-          {{- 'icon-success.svg' | inline_asset_content -}}
-          {{ 'templates.contact.form.post_success' | t }}
-        </h2>
-      {%- elsif form.errors -%}
-        <div class="form__message">
-          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
-            {{- 'icon-error.svg' | inline_asset_content -}}
-            {{ 'templates.contact.form.error_heading' | t }}
-          </h2>
-        </div>
-        <ul class="form-status-list caption-large" role="list">
-          <li>
-            <a href="#ContactForm-email" class="link">
-              {{ form.errors.translated_fields.email | capitalize }}
-              {{ form.errors.messages.email }}
-            </a>
-          </li>
-        </ul>
-      {%- endif -%}
-
       <div class="quiz-modal__step quiz-modal__step--1 show">
         <div class="quiz-modal__progress-wrapper">
           <h3 class="quiz-modal__progress-title">Let’s Start</h3>
@@ -302,16 +280,81 @@
                 <input placeholder="Phone number" type="number" name="contact[phone-number]" id="phone-number">
               </div>
             </li>
+            {% comment %}
+              <li>
+                <div class="quiz-modal__input-field">
+                  <input placeholder="Shipping address" type="text" name="contact[Shipping address]" id="user-address">
+                </div>
+              </li>
+            {% endcomment %}
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="Shipping address" type="text" name="contact[Shipping address]" id="useer-address">
+                <input placeholder="Street:" type="text" name="contact[Street]" id="user-street">
               </div>
+            </li>
+
+            <li>
+              <div class="quiz-modal__input-field">
+                <input placeholder="City:" type="text" name="contact[City:]" id="user-city">
+              </div>
+            </li>
+
+            <li>
+              <div class="quiz-modal__input-field">
+                <input placeholder="State:" type="text" name="contact[State:]" id="user-state">
+              </div>
+            </li>
+
+            <li>
+              <div class="quiz-modal__input-field">
+                <input placeholder="Zip code:" type="text" name="contact[Zip code:]" id="user-zip">
+              </div>
+            </li>
+
+            <li class="quiz-modal__checkbox-li">
+              <label class="quiz-modal__checkbox-li-label" for="checkbox-subscribe">
+                <p>Subscribe to the newsletter</p>
+              </label>
+              <label class="quiz-modal__checkbox">
+                <input
+                  class="quiz-modal__input"
+                  type="checkbox"
+                  name="contact[Subscribe to the newsletter]"
+                  value="Yes"
+                  id="checkbox-subscribe"
+                >
+                <span class="quiz-modal__span">
+                  <p class="quiz-modal__input-text">&check;</p>
+                </span>
+              </label>
             </li>
           </ul>
         </div>
 
+        {%- if form.posted_successfully? -%}
+          <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+            {{- 'icon-success.svg' | inline_asset_content -}}
+            {{ 'templates.contact.form.post_success' | t }}
+          </h2>
+        {%- elsif form.errors -%}
+          <div class="form__message">
+            <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+              {{- 'icon-error.svg' | inline_asset_content -}}
+              {{ 'templates.contact.form.error_heading' | t }}
+            </h2>
+          </div>
+          <ul class="form-status-list caption-large" role="list">
+            <li>
+              <a href="#ContactForm-email" class="link">
+                {{ form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email }}
+              </a>
+            </li>
+          </ul>
+        {%- endif -%}
+
         <div class="quiz-modal__navigation">
-          <button class="quiz-modal__btn-next btn btn-blue" type="submit">Submit</button>
+          <button class="quiz-modal__btn-next btn btn-blue" disabled="" type="submit">Submit</button>
         </div>
       </div>
     {%- endform -%}
@@ -329,7 +372,7 @@
         e.preventDefault();
 
         modalWrapper.classList.add('active');
-        document.body.classList.add('overflow-hidden'); // необязательно, но может пригодиться
+        document.body.classList.add('overflow-hidden');
       });
     });
 

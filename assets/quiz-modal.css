@@ -38,6 +38,8 @@
 }
 
 .quiz-modal__content {
+  overflow: auto;
+  height: 55rem;
   background-color: #F3F3F3;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -52,7 +54,19 @@
   border: 2px solid #d5286f;
   transition: transform 0.3s linear;
   transform: translateY(-100%);
+
+  form {
+    width: 100%;
+    height: 100%;
+  }
 }
+
+@media screen and (min-width: 992px) {
+  .quiz-modal__content {
+    height: initial;
+  }
+}
+
 
 
 .quiz-modal__close {
@@ -78,19 +92,23 @@
 }
 
 .quiz-modal__step {
-  visibility: hidden;
-  opacity: 0;
-  height: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 3rem;
-  transition: opacity 0.3s linear;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
+@media screen and (min-width: 992px) {
+  .quiz-modal__step {
+    padding-top: initial;
+    padding-bottom: initial;
+  }
+}
+
+
 .quiz-modal__step.show {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
+  display: flex;
 }
 
 
@@ -282,6 +300,40 @@
   }
 }
 
+
+.quiz-modal__checkbox-li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quiz-modal__checkbox-li-label {
+  cursor: pointer;
+
+  p {
+    margin: initial;
+  }
+}
+
+.quiz-modal__checkbox {
+  position: relative;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+
+  .quiz-modal__input-text {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+  }
+
+  .quiz-modal__input:checked + .quiz-modal__span {
+    .quiz-modal__input-text {
+      opacity: 1;
+    }
+  }
+}
+
 /* steps*/
 
 .quiz-modal__step--1 {
@@ -323,6 +375,7 @@
     }
   }
 }
+
 
  .quiz-modal__buttons-grid {
    li {
@@ -386,5 +439,11 @@
 
   .quiz-modal__body-title {
     font-size: 4.2rem;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .quiz-modal__step--5 {
+    gap: 2rem;
   }
 }
