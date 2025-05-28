@@ -252,11 +252,6 @@
           <ul class="quiz-modal__buttons quiz-modal__buttons-grid">
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="Name" type="text" name="contact[name]" id="input-name">
-              </div>
-            </li>
-            <li>
-              <div class="quiz-modal__input-field">
                 <input placeholder="E-mail" type="email" name="contact[email]" id="input-email">
               </div>
 
@@ -275,18 +270,32 @@
                 {%- endif -%}
               </div>
             </li>
+
             <li>
               <div class="quiz-modal__input-field">
-                <input placeholder="Phone number" type="number" name="contact[phone-number]" id="phone-number">
+                <input placeholder="Confirm e-mail" type="email" name="email-repeat" id="input-confirm-email">
               </div>
             </li>
-            {% comment %}
-              <li>
-                <div class="quiz-modal__input-field">
-                  <input placeholder="Shipping address" type="text" name="contact[Shipping address]" id="user-address">
-                </div>
-              </li>
-            {% endcomment %}
+
+            <li>
+              <div class="quiz-modal__input-field">
+                <input placeholder="Name" type="text" name="contact[name]" id="input-name">
+              </div>
+            </li>
+
+            <li>
+              <div class="quiz-modal__input-field">
+                <input
+                  placeholder="(000) _ _ _ - _ _ _ _"
+                  type="text"
+                  name="contact[phone-number]"
+                  inputmode="numeric"
+                  autocomplete="tel"
+                  id="phone-number"
+                >
+              </div>
+            </li>
+
             <li>
               <div class="quiz-modal__input-field">
                 <input placeholder="Street:" type="text" name="contact[Street]" id="user-street">
@@ -331,6 +340,10 @@
           </ul>
         </div>
 
+        <div id="email-error" style="color: red; display: none; font-size: 14px; margin-top: 5px;">
+          Emails do not match.
+        </div>
+
         {%- if form.posted_successfully? -%}
           <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
             {{- 'icon-success.svg' | inline_asset_content -}}
@@ -354,7 +367,7 @@
         {%- endif -%}
 
         <div class="quiz-modal__navigation">
-          <button class="quiz-modal__btn-next btn btn-blue" type="submit">Submit</button>
+          <button class="quiz-modal__btn-next btn btn-blue submit-btn" id="submit-btn" type="submit">Submit</button>
         </div>
       </div>
     {%- endform -%}
@@ -363,6 +376,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+    //quiz
     const modalWrapper = document.getElementById('quiz-modal-wrapper');
     const modalContent = modalWrapper.querySelector('.quiz-modal__content');
     const closeBtn = modalWrapper.querySelector('.quiz-modal__close');
@@ -421,5 +435,52 @@
         }
       });
     });
+    //quiz
+
+    //tel number validation
+    const phoneInput = document.getElementById('phone-number');
+
+    phoneInput.addEventListener('input', function (e) {
+      let value = e.target.value.replace(/\D/g, '');
+
+      if (value.length > 10) value = value.slice(0, 10);
+      let formatted = '';
+
+      if (value.length > 0) formatted = '(' + value.substring(0, 3);
+      if (value.length >= 4) formatted += ') ' + value.substring(3, 6);
+      if (value.length >= 7) formatted += '-' + value.substring(6, 10);
+
+      e.target.value = formatted;
+    });
+
+    //confirm e-mail
+
+    const emailInput = document.getElementById('input-email');
+    const confirmEmailInput = document.getElementById('input-confirm-email');
+    const submitBtn = document.getElementById('submit-btn');
+    const errorMessage = document.getElementById('email-error');
+
+    function validateEmails() {
+      const email = emailInput.value.trim().toLowerCase();
+      const confirmEmail = confirmEmailInput.value.trim().toLowerCase();
+
+      const bothFilled = email !== '' && confirmEmail !== '';
+      const match = email === confirmEmail;
+
+      if (bothFilled && match) {
+        submitBtn.disabled = false;
+        errorMessage.style.display = 'none';
+      } else {
+        submitBtn.disabled = true;
+        if (bothFilled && !match) {
+          errorMessage.style.display = 'block';
+        } else {
+          errorMessage.style.display = 'none';
+        }
+      }
+    }
+
+    emailInput.addEventListener('input', validateEmails);
+    confirmEmailInput.addEventListener('input', validateEmails);
   });
 </script>
