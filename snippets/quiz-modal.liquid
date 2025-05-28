@@ -440,6 +440,23 @@
     //quiz
 
     //tel number validation
+    const phoneInput = document.getElementById('phone-number');
+
+    phoneInput.addEventListener('input', function (e) {
+      let value = e.target.value.replace(/\D/g, ''); // Удаляем всё, кроме цифр
+
+      if (value.length > 10) value = value.slice(0, 10); // Ограничиваем до 10 цифр
+
+      let formatted = '';
+
+      if (value.length > 0) formatted = '(' + value.substring(0, 3);
+      if (value.length >= 4) formatted += ') ' + value.substring(3, 6);
+      if (value.length >= 7) formatted += '-' + value.substring(6, 10);
+
+      e.target.value = formatted;
+    });
+
+    //e-mail validation
     const form = document.getElementById('QuizForm');
     const emailInput = document.getElementById('input-email');
     const confirmEmailInput = document.getElementById('input-confirm-email');
@@ -481,11 +498,9 @@
       return true;
     }
 
-    // Проверка при вводе
     emailInput.addEventListener('input', validateEmails);
     confirmEmailInput.addEventListener('input', validateEmails);
 
-    // Проверка при отправке
     form.addEventListener('submit', function (e) {
       if (!validateEmails()) {
         e.preventDefault(); // отменяем отправку

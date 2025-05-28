@@ -452,3 +452,9 @@
     font-size: 4.2rem;
   }
 }
+
+@media screen and (min-width: 1180px) {
+  .quiz-modal__step--5 {
+    gap: 2rem;
+  }
+}
