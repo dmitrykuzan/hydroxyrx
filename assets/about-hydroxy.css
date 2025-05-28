@@ -121,7 +121,7 @@
   .about-hydroxy__body {
     flex-direction: row;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 1.5rem;
   }
 
   .about-hydroxy-title {
@@ -161,7 +161,7 @@
     margin-left: initial;
     margin-right: initial;
     flex-shrink: 0;
-    max-width: 46rem;
+    max-width: 40rem;
   }
 }
 
@@ -172,7 +172,7 @@
 
 
   .about-hydroxy__image {
-    max-width: 57rem;
+    max-width: 50rem;
   }
 }
 
