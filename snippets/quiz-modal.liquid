@@ -438,24 +438,7 @@
     //quiz
 
     //tel number validation
-    const phoneInput = document.getElementById('phone-number');
-
-    phoneInput.addEventListener('input', function (e) {
-      let value = e.target.value.replace(/\D/g, '');
-
-      if (value.length > 10) value = value.slice(0, 10);
-      let formatted = '';
-
-      if (value.length > 0) formatted = '(' + value.substring(0, 3);
-      if (value.length >= 4) formatted += ') ' + value.substring(3, 6);
-      if (value.length >= 7) formatted += '-' + value.substring(6, 10);
-
-      e.target.value = formatted;
-    });
-
-    //confirm e-mail
-
-    const form = document.getElementById('QuizForm');
+    const form = document.getElementById('my-form');
     const emailInput = document.getElementById('input-email');
     const confirmEmailInput = document.getElementById('input-confirm-email');
     const submitBtn = document.getElementById('submit-btn');
@@ -469,26 +452,32 @@
       const match = email === confirmEmail;
 
       if (!bothFilled) {
-        errorMessage.textContent = 'Please fill in both email fields';
+        errorMessage.textContent = 'Пожалуйста, заполните оба поля email';
         errorMessage.style.display = 'block';
+        submitBtn.disabled = true;
         return false;
       }
 
       if (!match) {
+        errorMessage.textContent = 'Email-адреса не совпадают';
         errorMessage.style.display = 'block';
+        submitBtn.disabled = true;
         return false;
       }
 
       errorMessage.style.display = 'none';
+      submitBtn.disabled = false;
       return true;
     }
 
+    // Проверка при вводе
     emailInput.addEventListener('input', validateEmails);
     confirmEmailInput.addEventListener('input', validateEmails);
 
+    // Проверка при отправке
     form.addEventListener('submit', function (e) {
       if (!validateEmails()) {
-        e.preventDefault();
+        e.preventDefault(); // отменяем отправку
       }
     });
   });
