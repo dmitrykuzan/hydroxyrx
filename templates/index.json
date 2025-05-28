@@ -62,12 +62,10 @@
       "block_order": [
         "product_BkBiiX"
       ],
-      "name": "Hero",
       "settings": {}
     },
     "about_hydroxy_eTPMJ6": {
       "type": "about-hydroxy",
-      "name": "About Hydroxy",
       "settings": {}
     },
     "rich_text_wFRQzd": {
@@ -75,6 +73,7 @@
       "blocks": {
         "heading_kFML8z": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Discover the Premium Standard in 7-Hydroxymitragynine",
             "heading_size": "h0"
@@ -91,7 +90,6 @@
         "heading_kFML8z",
         "text_WCLiJ7"
       ],
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -148,7 +146,6 @@
         "faq_item_t4rMBX"
       ],
       "disabled": true,
-      "name": "FAQ Section (with image)",
       "settings": {}
     },
     "video_slider_6Fhz9q": {
@@ -181,7 +178,6 @@
         "video_slide_Mk8AEx",
         "video_slide_CXRANN"
       ],
-      "name": "Video Review Slider",
       "settings": {
         "title": "",
         "subtitle": ""
@@ -241,17 +237,14 @@
         "faq_item_m4HJxi",
         "faq_item_n4X6Wx"
       ],
-      "name": "FAQ Section (with text)",
       "settings": {}
     },
     "ticker_CECxQX": {
       "type": "ticker",
-      "name": "Ticker Text",
       "settings": {}
     },
     "featured_blog_whTpnF": {
       "type": "featured-blog",
-      "name": "t:sections.featured-blog.presets.name",
       "settings": {
         "blog": "news",
         "post_limit": 3,
@@ -289,7 +282,6 @@
         "heading_JQNiLT",
         "text_CXEAEV"
       ],
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
