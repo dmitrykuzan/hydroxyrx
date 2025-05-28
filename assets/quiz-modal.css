@@ -92,7 +92,11 @@
 }
 
 .quiz-modal__step {
-  display: none;
+  /* display: none; */
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
   flex-direction: column;
   gap: 3rem;
   padding-top: 2rem;
@@ -108,7 +112,10 @@
 
 
 .quiz-modal__step.show {
-  display: flex;
+  /* display: flex; */
+   visibility: visible;
+  opacity: 1;
+  height: 100%;
 }
 
 
