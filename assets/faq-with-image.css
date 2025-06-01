@@ -183,7 +183,7 @@
 .faq__item.active {
   .faq__item-text {
     transition: max-height 1s ease-in-out;
-    max-height: 90rem;
+    max-height: 300rem;
   }
 
   .faq__item-title::before {
