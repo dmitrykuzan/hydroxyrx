@@ -72,87 +72,6 @@
         "image": "shopify://shop_images/IMG_0652.webp"
       }
     },
-    "rich_text_wFRQzd": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_kFML8z": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Discover the Premium Standard in 7-Hydroxymitragynine",
-            "heading_size": "h0"
-          }
-        },
-        "text_WCLiJ7": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>HydroxyRx</strong> is the world’s first premium brand dedicated exclusively to delivering safe, effective, and lab-verified 7-hydroxymitragynine products.</p><p>7-Hydroxymitragynine is a powerful, naturally occurring alkaloid derived from the Mitragyna speciosa plant—commonly known as kratom. As one of kratom’s most potent active compounds, 7-OH is renowned for promoting calm, focus, and a sense of well-being—without the typical side effects of synthetic opioids. Its unique interaction with the body’s mu-opioid receptors makes it a highly sought-after alternative for those seeking natural relief and long-lasting effects.<br/><br/>Unlike mitragynine, the more abundant alkaloid in kratom, 7-hydroxymitragynine is significantly more potent and often the focus of modern formulations and research. Due to its strength, precision in formulation and dosing is essential—something HydroxyRx takes seriously.</p><h3>Why Choose HydroxyRx?</h3><p>At HydroxyRx, we believe that the best results come from the best ingredients. That’s why our 7-hydroxymitragynine is carefully extracted from only the highest-grade, full-spectrum mitragynine powder—sourced from premium Indonesian and Thai kratom leaves.</p><ul><li><strong>Lab-Tested Purity & Potency:</strong> Every extract is third-party lab tested for safety, potency, and purity before being used.</li><li><strong>GMP-Formulated Excellence:</strong> We follow strict Good Manufacturing Practices (GMP) to produce a consistent and safe chewable pill form.</li><li><strong>Double Verified Batches:</strong> After formulation, each batch is sent out for independent lab testing once again before being packaged and approved for sale.</li></ul><p>Every HydroxyRx product is guaranteed to meet the advertised potency—or we’ll replace it.</p><h3>Transparency You Can Trust</h3><p>Each <strong>HydroxyRx</strong> package includes a scannable QR code that links directly to the third-party lab test results for that specific batch—giving you full transparency and peace of mind with every dose.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_kFML8z",
-        "text_WCLiJ7"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 0
-      }
-    },
-    "faq_with_image_9bCUDm": {
-      "type": "faq-with-image",
-      "blocks": {
-        "faq_item_BkLccc": {
-          "type": "faq_item",
-          "settings": {
-            "title": "What Are Alkaloids?",
-            "text": "<p>Alkaloids are a large and diverse group of <strong>naturally occurring</strong> organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p><p><br/>They are most famous for their powerful physiological effects on humans and animals, often acting on the central nervous system, immune system, or cardiovascular system.</p>"
-          }
-        },
-        "faq_item_we798h": {
-          "type": "faq_item",
-          "settings": {
-            "title": "Key Characteristics of Alkaloids:",
-            "text": "<p>Alkaloids are a large and diverse group of naturally occurring organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p><p>They are most famous for their powerful physiological effects on humans and animals, often acting on the central nervous system, immune system, or cardiovascular system.</p><p>They are most famous for their powerful physiological effects on humans and animals, often acting on the central nervous system, immune system, or cardiovascular system.</p>"
-          }
-        },
-        "faq_item_rrD3Yp": {
-          "type": "faq_item",
-          "settings": {
-            "title": "Examples of Common Alkaloids:",
-            "text": "<p>Alkaloids are a large and diverse group of <strong>naturally occurring</strong> organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
-          }
-        },
-        "faq_item_atn4Mx": {
-          "type": "faq_item",
-          "settings": {
-            "title": "Why Are Alkaloids Important?",
-            "text": "<p>Alkaloids are a large and diverse group of <strong>naturally occurring</strong> organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
-          }
-        },
-        "faq_item_t4rMBX": {
-          "type": "faq_item",
-          "settings": {
-            "title": "Mechanism of Action:",
-            "text": "<p>Alkaloids are a large and diverse group of <strong>naturally occurring</strong> organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_item_BkLccc",
-        "faq_item_we798h",
-        "faq_item_rrD3Yp",
-        "faq_item_atn4Mx",
-        "faq_item_t4rMBX"
-      ],
-      "disabled": true,
-      "settings": {}
-    },
     "video_slider_6Fhz9q": {
       "type": "video-slider",
       "blocks": {
@@ -202,7 +121,7 @@
           "type": "faq_item",
           "settings": {
             "title": "What Are Alkaloids?",
-            "text": "<p>Alkaloids are a large and diverse group of naturally occurring organic compounds that mostly contain at least one nitrogen atom—usually in a heterocyclic ring—and are biosynthesized by plants, fungi, bacteria, and animals.</p>"
+            "text": "<p>Alkaloids are naturally occurring organic compounds found in plants, fungi, and some animals. These nitrogen-containing compounds are known for their potent physiological effects on humans and animals. Many alkaloids act on the central nervous system and have been used for centuries in traditional medicine and modern pharmaceuticals. Common examples include caffeine, morphine, quinine, and nicotine.<br/><br/>In the kratom plant (Mitragyna speciosa), over 40 alkaloids have been identified, with mitragynine and 7-hydroxymitragynine being the most biologically active. These alkaloids interact with mu-opioid receptors, offering effects such as pain relief, mood elevation, and sedation.</p>"
           }
         },
         "faq_item_LQ7cHM": {
@@ -293,8 +212,6 @@
     "image_banner",
     "hero_aBgLWt",
     "about_hydroxy_eTPMJ6",
-    "rich_text_wFRQzd",
-    "faq_with_image_9bCUDm",
     "video_slider_6Fhz9q",
     "faq_with_text_iz9ydH",
     "ticker_CECxQX",
