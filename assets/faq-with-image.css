@@ -191,6 +191,10 @@
   }
 }
 
+.pdf-link {
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 1580px) {
   .faq__item-title {
     font-size: 2.2rem;
