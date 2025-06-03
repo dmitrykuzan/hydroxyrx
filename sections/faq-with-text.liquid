@@ -7,6 +7,12 @@
       <p class="faq-with-image__subtitle">
         We’ve gathered the most important answers to help you make an informed choice.
       </p>
+
+      {% if section.settings.pdf_url != blank %}
+        <a class="pdf-link btn btn-blue" href="{{ section.settings.pdf_url }}" target="_blank" rel="noopener noreferrer"
+          >View PDF</a
+        >
+      {% endif %}
     </div>
     <ul class="faq">
       {% for block in section.blocks %}
@@ -27,7 +33,14 @@
 {
   "name": "FAQ with text",
   "tag": "section",
-  "settings": [],
+  "settings": [
+    {
+      "type": "url",
+      "id": "pdf_url",
+      "label": "PDF link",
+      "info": "Upload the PDF in Content > Files and paste the link here"
+    }
+  ],
   "blocks": [
     {
       "type": "faq_item",
