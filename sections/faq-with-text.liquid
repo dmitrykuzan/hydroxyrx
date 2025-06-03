@@ -9,8 +9,12 @@
       </p>
 
       {% if section.settings.pdf_url != blank %}
-        <a class="pdf-link btn btn-blue" href="{{ section.settings.pdf_url }}" target="_blank" rel="noopener noreferrer"
-          >View guide in PDF</a
+        <a
+          class="pdf-link pdf-link__desktop btn btn-blue"
+          href="{{ section.settings.pdf_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Dosing Guide to 7-Hydroxy</a
         >
       {% endif %}
     </div>
@@ -27,6 +31,15 @@
       {% endfor %}
     </ul>
   </div>
+  {% if section.settings.pdf_url != blank %}
+    <a
+      class="pdf-link pdf-link__mobile btn btn-blue"
+      href="{{ section.settings.pdf_url }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Dosing Guide to 7-Hydroxy</a
+    >
+  {% endif %}
 </div>
 
 {% schema %}

@@ -192,8 +192,34 @@
 }
 
 .pdf-link {
-  margin-top: 2rem;
+  margin-top: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.pdf-link__desktop {
+  display: none;
+}
+
+.pdf-link__mobile {
+  display: flex;
+}
+
+
+@media screen and (min-width: 1023px) {
+  .pdf-link__mobile {
+    display: none;
+  }
+
+  .pdf-link__desktop {
+    display: flex;
+  }
+
+  .pdf-link {
+    margin-left: initial;
+  }
+}
+
 
 @media screen and (min-width: 1580px) {
   .faq__item-title {
