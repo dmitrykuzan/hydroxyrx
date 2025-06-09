@@ -114,6 +114,10 @@
     max-width: 90rem;
   }
 
+  .video-slider__titles {
+   max-width: 80rem;
+  }
+
   .video-slider__subtitle {
     font-size: 3.2rem;
   }
