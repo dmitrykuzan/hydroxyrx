@@ -214,6 +214,24 @@ html {
   padding: 0 1.5rem;
 }
 
+body {
+  padding-top: 7rem;
+}
+
+body.padding-main-page {
+  padding-top: 0rem;
+}
+
+@media screen and (min-width: 992px) {
+   body {
+    padding-top: 12rem;
+  }
+
+  body.padding-main-page {
+    padding-top: 0rem;
+  }
+}
+
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
 }
@@ -2549,11 +2567,27 @@ input[type='checkbox'] {
   }
 }
 
+.header.scroll-down-other {
+  &::before {
+    opacity: 1;
+  }
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+}
+
+.header__wrapper.page-width {
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 1220px) {
+  .header__wrapper.page-width {
+    padding: 0 5rem;
+  }
 }
 
 @media screen and (max-width: 749px) {
