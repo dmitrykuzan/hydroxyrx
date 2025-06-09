@@ -80,7 +80,7 @@
 
 @media screen and (min-width: 1024px) {
   .ticker {
-    margin-top: 13rem;
+    margin-top: 5rem;
   }
 
   .ticker__line {
@@ -106,7 +106,7 @@
 
 @media screen and (min-width: 1580px) {
   .ticker {
-    margin-top: 18rem;
+    margin-top: 10rem;
   }
 
  .ticker__line-blue {
