@@ -1,8 +1,24 @@
 .hero {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
   gap: 3rem;
+}
+
+.hero__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero__container {
+  width: 100%;
 }
 
 .hero__wrapper {
@@ -25,18 +41,19 @@
   font-family: 'RobotoCondensed-Bold';
   font-weight: 700;
   line-height: 100%;
+  color: #fff;
 
   span {
     font-family: 'RobotoCondensed-Italic';
     font-weight: 400;
-    color: #D5286F;
+    color: #2F1D25;
   }
 }
 
 .hero__image-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .hero__image {
@@ -57,41 +74,46 @@
 .hero__text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 
   h1 {
+    margin: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 6.4rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 90%;
+    font-family: 'RobotoCondensed-Bold';
+
+    .text {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    .smile {
+      color: transparent;
+      display: inline-block;
+      width: 5rem;
+      height: 5rem;
+      background-image: url(hydroxy-smile.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  h2 {
     margin: initial;
     text-align: center;
     font-size: 2.8rem;
     font-family: 'RobotoCondensed-Regular';
     font-weight: 400;
-
-    span {
-      color: #999999;
-    }
-  }
-}
-
-.hero__image-text {
-  text-align: center;
-  margin: initial;
-  font-size: 1.8rem;
- 
-  height: max-content;
-  margin-top: auto;
-
-  .blue {
-    color: #379AC9;
-    font-weight: 700;
-  }
-
-  .pink {
-    color: #D5286F;
-    font-weight: 700;
-  }
-
-  strong {
-    font-weight: 800;
-     text-decoration: underline;
+    color: #fff;
   }
 }
 
@@ -109,8 +131,8 @@
 
   p {
     margin: initial;
-    color: #808080;
-    font-size: 1.8rem;
+    color: #fff;
+    font-size: 2rem;
     text-align: center;
 
     span {
@@ -120,24 +142,13 @@
   }
 }
 
-.hero__bottom {
-  flex-direction: column;
-  justify-content: space-between;
-  display: none;
-  width: 100%;
-}
 
-@media screen and (min-width: 575px) {
-  .hero__text {
-    h1 {
-      font-size: 3.8rem;
-    }
-  }
-}
+
 
 @media screen and (min-width: 1023px) {
   .hero {
     gap: 1rem;
+    padding-top: 12rem;
   }
 
   .hero__content {
@@ -147,41 +158,56 @@
 
   .hero__wrapper {
     margin: 0 auto;
-    max-width: 90rem;
     flex-direction: row;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
 
   .hero__text {
+    gap: 1.5rem;
+
     h1 {
+      font-size: 9rem;
       text-align: start;
+
+       .smile {
+        width: 7rem;
+        height: 7rem;
+      }
+    }
+
+    h2 {
+      font-size: 3.8rem;
     }
   }
 
   .hero__subtitle {
-    text-align: start;
     font-size: 6.4rem;
   }
 
   .hero__product-link {
     max-width: 25rem;
-    margin-left: initial;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .hero__review {
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 0.5rem;
   
     p {
       text-align: start;
+      font-size: 2.6rem;
+
+      span {
+        font-size: 3rem;
+      }
     }
   }
 
-  .hero__review-mobile {
-    display: none;
+  .hero__image {
+    max-width: 50rem;
   }
 
   .hero__bottom {
@@ -191,22 +217,23 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  .hero__image-text-mobile {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 1280px) {
+
   .hero {
-    margin-top: 4rem;
+    padding-top: 10rem;
   }
 
   .hero__text {
-    gap: 1rem;
 
     h1 {
-        font-size: 5.4rem;
+      font-size: 11rem;
+
+      .smile {
+        width: 9rem;
+        height: 9rem;
+      }
     }
   }
 
@@ -221,11 +248,7 @@
 
   .hero__image {
     max-width: initial;
-    max-width: 45rem;
-  }
-
-  .hero__image-text {
-    font-size: 2.2rem;
+    max-width: 60rem;
   }
 
    .hero__bottom {
@@ -238,18 +261,19 @@
     display: flex;
     align-items: center;
     position: relative;
+    padding-top: 15rem;
   }
   
   .hero__wrapper {
     width: 100%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
   }
   
   .hero__content {
     display: flex;
     flex-direction: column;
-    gap: 15rem;
+    gap: 5rem;
     max-width: initial;
   }
 
@@ -259,7 +283,7 @@
   }
   
   .hero__image {
-    max-width: 60rem;
+    max-width: 67rem;
   }
   
   .hero__text {
@@ -271,39 +295,27 @@
     max-width: 75rem;
   
     h1 {
-      font-size: 6.4rem;
-      font-weight: 500;
-      margin: initial;
-  
-      span {
-        color: #999999;
+      font-size: 14rem;
+
+      .smile {
+        width: 12rem;
+        height: 12rem;
       }
     }
   }
 
-   .hero__image-text {
-    font-size: 2.8rem;
-  }
-  
-  .hero__product-link {
-    margin-top: 5rem;
-  }
-  
-  .hero__review-desktop {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  
+  .hero__review {
     p {
-      margin: initial;
-      color: #808080;
-      font-size: 3.2rem;
-      line-height: 100%;
-  
+      font-size: 3rem;
+
       span {
-        font-weight: 600;
         font-size: 3.4rem;
       }
     }
   }
+
+  .hero__product-link {
+    margin-top: 3rem;
+  }
+  
 }
