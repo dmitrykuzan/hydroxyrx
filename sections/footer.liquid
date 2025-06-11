@@ -1530,10 +1530,20 @@
                 <a class="footer__link-cta" href="{{ product.url }}">Buy Now</a>
               {% endif %}
               {% comment %} print link product {% endcomment %}
+
+              <button class="footer__bottom-hydroxy-btn footer__link-cta mobile-only subscribe-starter__link">
+                Subscribe for news
+              </button>
             </div>
           </div>
         {%- endunless -%}
       {%- endif -%}
+    </div>
+
+    <div class="footer__bottom-hydroxy page-width">
+      <button class="footer__bottom-hydroxy-btn footer__link-cta desktop-only subscribe-starter__link">
+        Subscribe for news
+      </button>
     </div>
   </div>
 </footer>

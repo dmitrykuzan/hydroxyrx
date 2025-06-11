@@ -29,10 +29,18 @@
 .hydroxy__logo-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 5rem;
   width: 100%;
 }
+
+.footer__bottom-hydroxy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 
 .hydroxy__newsletter-wrapper-desktop {
   display: none;
@@ -48,9 +56,8 @@
   align-items: center;
   justify-content: center;
   min-height: 4.3rem;
-  width: 80%;
   color: #000;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   transition: background-color 0.3s linear, color 0.3s linear;
 
   &:hover {
@@ -58,6 +65,8 @@
     color: #fff;
   }
 }
+
+
 
 @media screen and (min-width: 480px) {
   .hydroxy__logo-wrapper {
@@ -124,7 +133,7 @@
 
   .footer__content-bottom-wrapper {
     flex-wrap: wrap;
-    row-gap: 5rem;
+    row-gap: 3rem;
     justify-content: center;
   }
 
@@ -196,10 +205,27 @@
   margin-top: 0;
 }
 
+.footer-block--menu {
+  .footer-block__details-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 749px) {
+  .footer-block--menu {
+    .footer-block__details-content {
+      flex-direction: row;
+    }
+  }
+}
+
+
 @media screen and (max-width: 749px) {
   .footer-block.footer-block--menu:only-child {
     text-align: left;
   }
+
+  
 }
 
 @media screen and (min-width: 750px) {
@@ -297,7 +323,7 @@
     flex-direction: column;
     flex: 1 1 100%;
     align-items: center;
-    gap: 3rem;
+    gap: 1.5rem;
   }
 
   .footer__list-social.list-social,
@@ -362,7 +388,7 @@
   margin-right: auto;
   text-align: center;
   order: 3;
-  margin-top: 3rem;
+  margin-top: 1rem;
   /* margin-top: 1.5rem; */
 }
 
@@ -601,8 +627,19 @@
   }
 }
 
+.footer__bottom-hydroxy-btn.desktop-only {
+  display: none;
+}
 
-
+.footer__bottom-hydroxy-btn {
+  background-color: initial;
+  font-weight: 400;
+  font-size: 1.4rem;
+  min-width: initial;
+  max-width: 13rem;
+  width: 100%;
+  cursor: pointer;
+}
 
 
 
@@ -637,6 +674,7 @@
 
   .footer__link-cta {
     max-width: 13rem;
+    font-size: 1.6rem;
   }
 
   .footer__content-bottom-wrapper {
@@ -656,7 +694,23 @@
   .copyright__content a {
     font-size: 1.8rem;
   }
+
+  .footer__bottom-hydroxy-btn.desktop-only {
+    display: flex;
+  }
+
+  .footer__bottom-hydroxy-btn.mobile-only {
+    display: none;
+  }
+
+  .footer__bottom-hydroxy-btn {
+    max-width: 25rem;
+  }
 }
+
+
+
+
 
 @media screen and (min-width: 1023px) {
   .footer__content-bottom-wrapper {

@@ -392,6 +392,7 @@
 }
 
 
+
  .quiz-modal__buttons-grid {
    li {
     width: 100%;
@@ -492,3 +493,23 @@
     }
   }
 }
+
+.quiz-modal__buttons-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  li {
+    width: 100%;
+  }
+}
+
+.quiz-modal__content-subscribe {
+  max-width: 56rem;
+  height: initial;
+}
+
