@@ -48,6 +48,7 @@
                   inputmode="numeric"
                   autocomplete="tel"
                   id="phone-number"
+                  class="phone-number"
                 >
               </div>
             </li>
@@ -123,19 +124,19 @@
     }
 
     //tel number validation
-    const phoneInput = document.getElementById('phone-number');
+    document.querySelectorAll('.phone-number').forEach(function (phoneInput) {
+      phoneInput.addEventListener('input', function (e) {
+        let value = e.target.value.replace(/\D/g, '');
 
-    phoneInput.addEventListener('input', function (e) {
-      let value = e.target.value.replace(/\D/g, '');
+        if (value.length > 10) value = value.slice(0, 10);
+        let formatted = '';
 
-      if (value.length > 10) value = value.slice(0, 10);
-      let formatted = '';
+        if (value.length > 0) formatted = '(' + value.substring(0, 3);
+        if (value.length >= 4) formatted += ') ' + value.substring(3, 6);
+        if (value.length >= 7) formatted += '-' + value.substring(6, 10);
 
-      if (value.length > 0) formatted = '(' + value.substring(0, 3);
-      if (value.length >= 4) formatted += ') ' + value.substring(3, 6);
-      if (value.length >= 7) formatted += '-' + value.substring(6, 10);
-
-      e.target.value = formatted;
+        e.target.value = formatted;
+      });
     });
   });
 </script>
