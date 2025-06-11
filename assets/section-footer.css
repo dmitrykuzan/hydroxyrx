@@ -38,7 +38,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
 }
 
 
@@ -705,6 +704,10 @@
 
   .footer__bottom-hydroxy-btn {
     max-width: 25rem;
+  }
+
+  .footer__bottom-hydroxy {
+    margin-top: 3rem;
   }
 }
 
