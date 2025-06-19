@@ -122,6 +122,11 @@
         "pdf_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/Doctors-Guide-To-Dosing-7OH-Safely.pdf?v=1748943807"
       }
     },
+    "banner_hydroxy_iKbtw3": {
+      "type": "banner-hydroxy",
+      "name": "Banner Hydroxy",
+      "settings": {}
+    },
     "featured_blog_whTpnF": {
       "type": "featured-blog",
       "settings": {
@@ -181,6 +186,7 @@
     "hydroxy_benefits_main_iRecWz",
     "video_slider_6Fhz9q",
     "faq_with_text_iz9ydH",
+    "banner_hydroxy_iKbtw3",
     "featured_blog_whTpnF",
     "ticker_CECxQX",
     "rich_text_HBKVhT"
