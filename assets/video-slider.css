@@ -105,13 +105,13 @@
   }
 
   .video-slider__swiper {
-    max-width: 70rem;
+    max-width: 85rem;
   }
 }
 
 @media screen and (min-width: 1480px) {
   .video-slider__swiper {
-    max-width: 90rem;
+    max-width: 95rem;
   }
 
   .video-slider__titles {

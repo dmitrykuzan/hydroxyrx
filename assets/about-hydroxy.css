@@ -115,7 +115,7 @@
 
 @media screen and (min-width: 1023px) {
   .about-hydroxy {
-    margin-top: 15rem;
+    margin-top: 12rem;
   }
 
   .about-hydroxy__body {
@@ -167,7 +167,7 @@
 
 @media screen and (min-width: 1230px) {
   .about-hydroxy {
-    margin-top: 20rem;
+    margin-top: 15rem;
   }
 
 
@@ -177,9 +177,7 @@
 }
 
 @media screen and (min-width: 1460px) {
-  .about-hydroxy {
-    margin-top: 25rem;
-  }
+
 
   .about-hydroxy-title {
     h2 {
