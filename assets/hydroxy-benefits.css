@@ -107,9 +107,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .hydroxy-benefits {
-    margin-top: 15rem;
-  }
 
   .hydroxy-benefits__wrapper {
     gap: 8rem;
@@ -128,7 +125,7 @@
 
 @media screen and (min-width: 1400px) {
   .hydroxy-benefits {
-    margin-top: 18rem;
+    margin-top: 15rem;
   }
 
   .hydroxy-benefits__list {
