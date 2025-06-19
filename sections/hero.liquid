@@ -14,7 +14,7 @@
     <div class="hero__wrapper">
       <div class="hero__content">
         <div class="hero__text">
-          <h1 class="">
+          <h1>
             <span class="text">FEEL</span>
             <span class="text"
               >G <span class="smile scroll-trigger animate--slide-in">O</span>
@@ -40,13 +40,40 @@
       </div>
 
       <div class="hero__image-wrapper">
-        <div class="hero__image">
+        <div class="hero__image mobile">
           <img
             src="{{ 'hydroxy-hero.png' | asset_url }}"
             width="840"
             height="840"
             loading="eager"
             alt="HydroxyRx Smile Logotype"
+          >
+        </div>
+
+        <div class="hero__image desktop">
+          <img
+            class="hydroxy-hero-img-1"
+            src="{{ 'hydroxy-hero-1.png' | asset_url }}"
+            width="438"
+            height="340"
+            loading="eager"
+            alt="HydroxyRx pack"
+          >
+          <img
+            class="hydroxy-hero-img-2"
+            src="{{ 'hydroxy-hero-2.png' | asset_url }}"
+            width="515"
+            height="340"
+            loading="eager"
+            alt="HydroxyRx pack"
+          >
+          <img
+            class="hydroxy-hero-img-3"
+            src="{{ 'hydroxy-hero-3.png' | asset_url }}"
+            width="576"
+            height="431"
+            loading="eager"
+            alt="HydroxyRx pack"
           >
         </div>
 
@@ -116,6 +143,25 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+     parallaxMouse({
+      elements: '.hydroxy-hero-img-1',
+      moveFactor: -20,
+      wrap: '.hero',
+    });
+
+    parallaxMouse({
+      elements: '.hydroxy-hero-img-2',
+      moveFactor: -15,
+      wrap: '.hero',
+    });
+
+      parallaxMouse({
+      elements: '.hydroxy-hero-img-3',
+      moveFactor: 25,
+      wrap: '.hero',
+    });
+
+
     //counter
     const counters = document.querySelectorAll('.counter-value');
     const speed = 800;
