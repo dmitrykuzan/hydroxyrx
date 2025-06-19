@@ -1,0 +1,47 @@
+{{ 'banner-hydroxy.css' | asset_url | stylesheet_tag }}
+
+<section class="banner-hydroxy page-width">
+  <div class="banner-hydroxy__wrapper">
+    <div class="banner-hydroxy__text">
+      <div class="banner-hydroxy__logo">
+        <img
+          src="{{ 'hydroxy-smile.png' | asset_url }}"
+          width="150"
+          height="150"
+          loading="lazy"
+          alt="HydroxyRx smile"
+        >
+      </div>
+
+      <div class="banner-hydroxy__titles">
+        <h2>Discover Premium 7-0H</h2>
+        <h3>HYDROXY<span>Rx</span></h3>
+      </div>
+
+      <a class="banner-hydroxy__link btn btn-blue" href="{{ all_products['7-hydroxymitragynine'].url }}">
+        Add to cart
+      </a>
+    </div>
+    <div class="banner-hydroxy__image">
+      <img
+        src="{{ 'set-pack.jpg' | asset_url }}"
+        width="800"
+        height="600"
+        loading="lazy"
+        alt="HydroxyRx set pack"
+      >
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Banner Hydroxy",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Banner Hydroxy"
+    }
+  ]
+}
+{% endschema %}

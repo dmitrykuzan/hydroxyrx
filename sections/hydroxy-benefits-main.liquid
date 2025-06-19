@@ -1,0 +1,83 @@
+{{ 'hydroxy-benefits.css' | asset_url | stylesheet_tag }}
+
+<section class="hydroxy-benefits page-width">
+  <div class="hydroxy-benefits__wrapper">
+    <div class="hydroxy-benefits__titles">
+      <h2 class="hydroxy-benefits__title">Why Choose HydroxyRx?</h2>
+      <p class="hydroxy-benefits__subtitle">
+        At HydroxyRx, we believe that the best results come from the best ingredients. That’s why our
+        7-hydroxymitragynine is carefully extracted from only the highest-grade, full-spectrum mitragynine
+        powder—sourced from premium Indonesian and Thai kratom leaves.
+      </p>
+    </div>
+
+    <ul class="hydroxy-benefits__list">
+      <li class="hydroxy-benefits__item">
+        <div class="hydroxy-benefits__item-body">
+          <h3 class="hydroxy-benefits__item-title">Lab-Tested Purity & Potency:</h3>
+          <span class="hydroxy-benefits__item-icon">
+            <img src="{{ 'icon-benefits-main-1.png' | asset_url }}" width="59" loading="lazy" height="80" alt="Icon">
+          </span>
+        </div>
+
+        <p class="hydroxy-benefits__description">
+          Every extract is third-party lab tested for safety, potency, and purity before being used.
+        </p>
+      </li>
+
+      <li class="hydroxy-benefits__item">
+        <div class="hydroxy-benefits__item-body">
+          <h3 class="hydroxy-benefits__item-title">GMP-Formulated Excellence:</h3>
+
+          <span class="hydroxy-benefits__item-icon">
+            <img src="{{ 'icon-benefits-main-2.png' | asset_url }}" width="80" height="80" loading="lazy" alt="Icon">
+          </span>
+        </div>
+
+        <p class="hydroxy-benefits__description">
+          We follow strict Good Manufacturing Practices (GMP) to produce a consistent and safe chewable pill form.
+        </p>
+      </li>
+
+      <li class="hydroxy-benefits__item">
+        <div class="hydroxy-benefits__item-body">
+          <h3 class="hydroxy-benefits__item-title">Double Verified Batches:</h3>
+
+          <span class="hydroxy-benefits__item-icon">
+            <img src="{{ 'icon-benefits-main-3.png' | asset_url }}" width="100" height="60" loading="lazy" alt="Icon">
+          </span>
+        </div>
+
+        <p class="hydroxy-benefits__description">
+          After formulation, each batch is sent out for independent lab testing once again before being packaged and
+          approved for sale.
+        </p>
+      </li>
+
+      <li class="hydroxy-benefits__item">
+        <div class="hydroxy-benefits__item-body">
+          <h3 class="hydroxy-benefits__item-title">Guarantee</h3>
+
+          <span class="hydroxy-benefits__item-icon">
+            <img src="{{ 'icon-benefits-main-4.png' | asset_url }}" width="80" height="80" loading="lazy" alt="Icon">
+          </span>
+        </div>
+        <p class="hydroxy-benefits__description">
+          Every HydroxyRx product is guaranteed to meet the advertised potency—or we’ll replace it.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hydroxy Benefits Main",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Hydroxy Benefits Main"
+    }
+  ]
+}
+{% endschema %}

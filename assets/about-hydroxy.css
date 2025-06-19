@@ -119,6 +119,7 @@
   }
 
   .about-hydroxy__body {
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     gap: 1.5rem;
@@ -158,6 +159,8 @@
   }
 
   .about-hydroxy__image {
+    position: sticky;
+    top: 10rem;
     margin-left: initial;
     margin-right: initial;
     flex-shrink: 0;
