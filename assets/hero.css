@@ -358,19 +358,26 @@
   }
   
   .hero__image.desktop {
-    width: 69rem;
+    width: 80rem;
     height: 66rem;
 
     .hydroxy-hero-img-1 {
-      left: -8rem;
+      width: 40rem;
+      height: 32rem;
+      left: -1rem;
+      top: -0.5rem;
     }
 
     .hydroxy-hero-img-2 {
-      left: -8rem;
+      width: 41rem;
+      height: 28rem;
+      left: -2rem;
     }
 
     .hydroxy-hero-img-3 {
-      left: 30rem;
+      width: 45rem;
+      height: 47rem;
+      left: 43rem;
     }
   }
 
