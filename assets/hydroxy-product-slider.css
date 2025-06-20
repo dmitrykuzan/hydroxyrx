@@ -35,6 +35,7 @@
 @media screen and (min-width: 1680px) {
   .hydroxy-product-slider__wrapper {
     max-height: 80rem;
+    max-width: 85rem;
   }
 }
 
