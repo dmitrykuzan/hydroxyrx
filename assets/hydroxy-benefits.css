@@ -8,6 +8,18 @@
   gap: 5rem;
 }
 
+.benefits__swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hydroxy-benefits-swiper {
+  max-width: 74rem;
+  width: 100%;
+  overflow: hidden;
+}
+
 .hydroxy-benefits__titles >* {
   margin: 0;
 }
@@ -33,12 +45,12 @@
 }
 
 .hydroxy-benefits__list {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   gap: 3rem;
   list-style: none;
   margin: initial;
-  padding-left: initial;
+  padding-left: initial; */
 }
 
 .hydroxy-benefits__item {
@@ -52,6 +64,8 @@
   padding-right: 2rem;
   background-color: #F9F9F9;
   border-radius: 1rem;
+  height: 100%;
+  min-height: 37rem;
 }
 
 .hydroxy-benefits__item-title {
@@ -96,13 +110,31 @@
 
 @media screen and (min-width: 767px) {
   .hydroxy-benefits__list {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; */
+  }
+
+  .hydroxy-benefits {
+    margin-top: 12rem;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .hydroxy-benefits__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 
+  .hydroxy-benefits-swiper {
+    max-width: initial;
+  }
+
   .hydroxy-benefits {
-    margin-top: 12rem;
+    .swiper-wrapper {
+      box-sizing: border-box !important;
+    }
   }
 }
 

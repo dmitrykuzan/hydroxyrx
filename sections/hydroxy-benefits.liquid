@@ -9,68 +9,116 @@
         fog, or jitters of other products.
       </p>
     </div>
+    <div class="swiper hydroxy-benefits-swiper">
+      <div class="hydroxy-benefits__list swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="hydroxy-benefits__item">
+            <div class="hydroxy-benefits__item-body">
+              <h3 class="hydroxy-benefits__item-title">For Focus at Work</h3>
+              <span class="hydroxy-benefits__item-icon">
+                <img src="{{ 'icon-benefits-1.png' | asset_url }}" width="80" loading="lazy" height="80" alt="Icon">
+              </span>
+            </div>
 
-    <ul class="hydroxy-benefits__list">
-      <li class="hydroxy-benefits__item">
-        <div class="hydroxy-benefits__item-body">
-          <h3 class="hydroxy-benefits__item-title">For Focus at Work</h3>
-          <span class="hydroxy-benefits__item-icon">
-            <img src="{{ 'icon-benefits-1.png' | asset_url }}" width="80" loading="lazy" height="80" alt="Icon">
-          </span>
+            <p class="hydroxy-benefits__description">
+              Get into deep work mode without caffeine overload. HydroxyRX helps you stay centered, alert, and
+              distraction-free — perfect for long tasks and creative flow.
+            </p>
+          </div>
         </div>
 
-        <p class="hydroxy-benefits__description">
-          Get into deep work mode without caffeine overload. HydroxyRX helps you stay centered, alert, and
-          distraction-free — perfect for long tasks and creative flow.
-        </p>
-      </li>
+        <div class="swiper-slide">
+          <div class="hydroxy-benefits__item">
+            <div class="hydroxy-benefits__item-body">
+              <h3 class="hydroxy-benefits__item-title">To Wind Down in the Evening</h3>
 
-      <li class="hydroxy-benefits__item">
-        <div class="hydroxy-benefits__item-body">
-          <h3 class="hydroxy-benefits__item-title">To Wind Down in the Evening</h3>
+              <span class="hydroxy-benefits__item-icon">
+                <img src="{{ 'icon-benefits-2.png' | asset_url }}" width="80" height="80" loading="lazy" alt="Icon">
+              </span>
+            </div>
 
-          <span class="hydroxy-benefits__item-icon">
-            <img src="{{ 'icon-benefits-2.png' | asset_url }}" width="80" height="80" loading="lazy" alt="Icon">
-          </span>
+            <p class="hydroxy-benefits__description">
+              Unplug without feeling knocked out. Take HydroxyRX after a long day to release tension and ease into a
+              calm, natural state — no grogginess the next morning.
+            </p>
+          </div>
         </div>
 
-        <p class="hydroxy-benefits__description">
-          Unplug without feeling knocked out. Take HydroxyRX after a long day to release tension and ease into a calm,
-          natural state — no grogginess the next morning.
-        </p>
-      </li>
+        <div class="swiper-slide">
+          <div class="hydroxy-benefits__item">
+            <div class="hydroxy-benefits__item-body">
+              <h3 class="hydroxy-benefits__item-title">For Social Confidence</h3>
 
-      <li class="hydroxy-benefits__item">
-        <div class="hydroxy-benefits__item-body">
-          <h3 class="hydroxy-benefits__item-title">For Social Confidence</h3>
+              <span class="hydroxy-benefits__item-icon">
+                <img src="{{ 'icon-benefits-3.png' | asset_url }}" width="44" height="80" loading="lazy" alt="Icon">
+              </span>
+            </div>
 
-          <span class="hydroxy-benefits__item-icon">
-            <img src="{{ 'icon-benefits-3.png' | asset_url }}" width="44" height="80" loading="lazy" alt="Icon">
-          </span>
+            <p class="hydroxy-benefits__description">
+              If social settings make you anxious, HydroxyRX helps you feel relaxed, open, and present — all while
+              staying sharp and in control.
+            </p>
+          </div>
         </div>
 
-        <p class="hydroxy-benefits__description">
-          If social settings make you anxious, HydroxyRX helps you feel relaxed, open, and present — all while staying
-          sharp and in control.
-        </p>
-      </li>
+        <div class="swiper-slide">
+          <div class="hydroxy-benefits__item">
+            <div class="hydroxy-benefits__item-body">
+              <h3 class="hydroxy-benefits__item-title">To Bounce Back After a Stressful Day</h3>
 
-      <li class="hydroxy-benefits__item">
-        <div class="hydroxy-benefits__item-body">
-          <h3 class="hydroxy-benefits__item-title">To Bounce Back After a Stressful Day</h3>
-
-          <span class="hydroxy-benefits__item-icon">
-            <img src="{{ 'icon-benefits-4.png' | asset_url }}" width="80" height="80" loading="lazy" alt="Icon">
-          </span>
+              <span class="hydroxy-benefits__item-icon">
+                <img src="{{ 'icon-benefits-4.png' | asset_url }}" width="80" height="80" loading="lazy" alt="Icon">
+              </span>
+            </div>
+            <p class="hydroxy-benefits__description">
+              For those high-anxiety moments or emotionally exhausting days, HydroxyRX helps rebalance your mood and
+              bring you back to center — naturally.
+            </p>
+          </div>
         </div>
-        <p class="hydroxy-benefits__description">
-          For those high-anxiety moments or emotionally exhausting days, HydroxyRX helps rebalance your mood and bring
-          you back to center — naturally.
-        </p>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
+  <div class="benefits__swiper-pagination"></div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let swiperInstance = null;
+
+    function initOrDestroySwiper() {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth <= 1023 && !swiperInstance) {
+        swiperInstance = new Swiper('.hydroxy-benefits-swiper', {
+          spaceBetween: 10,
+          slidesPerView: 1,
+          loop: true,
+
+          pagination: {
+            el: '.benefits__swiper-pagination',
+            clickable: true,
+          },
+
+          breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+          },
+        });
+      } else if (screenWidth > 1023 && swiperInstance) {
+        swiperInstance.destroy(true, true);
+        swiperInstance = null;
+      }
+    }
+
+    initOrDestroySwiper();
+
+    window.addEventListener('resize', function () {
+      initOrDestroySwiper();
+    });
+  });
+</script>
 
 {% schema %}
 {
