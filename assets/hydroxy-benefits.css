@@ -111,7 +111,7 @@
 @media screen and (max-width: 766px) {
   .hydroxy-benefits__item {
     justify-content: initial !important;
-    min-height: 25rem;
+    min-height: auto !important;
   }
 }
 
