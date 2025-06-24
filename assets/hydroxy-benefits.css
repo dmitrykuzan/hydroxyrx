@@ -119,10 +119,6 @@
     margin-top: 12rem;
   }
 
-  .hydroxy-benefits__item {
-    justify-content: flex-start;
-    min-height: 0;
-  }
 }
 
 @media screen and (min-width: 1023px) {
