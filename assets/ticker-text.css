@@ -265,3 +265,9 @@
     max-width: 28rem;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .certificates__item img {
+    max-width: 75px !important;
+  }
+}
