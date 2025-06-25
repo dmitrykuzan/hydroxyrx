@@ -8,6 +8,13 @@
   gap: 3rem;
 }
 
+.about-hydroxy__link {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .about-hydroxy-title {
   display: flex;
   flex-direction: column;
@@ -29,13 +36,11 @@
 
 .about-hydroxy__content {
   display: flex;
-  flex-direction: column-reverse;
   gap: 3rem;
 }
 
 .about-hydroxy__content-description {
   margin: initial;
-  order: 2;
 }
 
 .about-hydroxy__list {
@@ -86,7 +91,6 @@
 }
 
 .about-hydroxy__link {
-  order: 1;
   margin-left: auto;
   margin-right: auto;
   max-width: 32rem;
@@ -155,7 +159,8 @@
   }
 
   .about-hydroxy__link {
-    margin-left: initial;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about-hydroxy__image {
@@ -219,7 +224,32 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .about-hydroxy__block {
-    padding: 5rem;
+  .about-hydroxy__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .about-hydroxy__content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-hydroxy__image {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-hydroxy__image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 1rem;
   }
 }
