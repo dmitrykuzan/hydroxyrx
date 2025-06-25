@@ -1,26 +1,26 @@
+{{ 'about-hydroxy.css' | asset_url | stylesheet_tag }}
+
 <section class="about-hydroxy page-width">
   <div class="about-hydroxy__block">
     <div class="about-hydroxy__wrapper">
+      <div class="hydroxy-benefits__titles">
+        <h2 class="hydroxy-benefits__title" style="font-weight: 500 !important; margin-botton: 2rem !important;">
+          Discover HYDROXYRx
+        </h2>
+        <p class="hydroxy-benefits__subtitle">
+          The World’s First Premium 7-OH Brand—Formulated for Clarity, Relief, and Trust.
+        </p>
+      </div>
+
       <div class="about-hydroxy__body">
         <div class="about-hydroxy__content">
-          <div class="about-hydroxy__logo-circle">
-            <img src="{{ 'your-logo.svg' | asset_url }}" alt="HydroxyRx logo" width="70" height="70">
-          </div>
-
-          <div class="hydroxy-benefits__titles">
-            <h2 class="hydroxy-benefits__title" style="font-weight: 500 !important; margin-bottom: 2rem !important;">
-              Discover HYDROXYRx
-            </h2>
-            <p class="hydroxy-benefits__subtitle">
-              The World’s First Premium 7-OH Brand—Formulated for Clarity, Relief, and Trust.
-            </p>
-          </div>
-
           <div class="about-hydroxy__content-description">
             {{ section.settings.description }}
           </div>
 
-          <a class="about-hydroxy__link btn btn-blue" href="{{ all_products['7-hydroxymitragynine'].url }}">Buy Now</a>
+          <a class="about-hydroxy__link btn btn-blue" href="{{ all_products['7-hydroxymitragynine'].url }}">
+            Shop now
+          </a>
         </div>
 
         {% if section.settings.image != blank %}
@@ -30,7 +30,7 @@
               width="700"
               height="530"
               loading="lazy"
-              alt="HydroxyRx Packaging"
+              alt="Flower pictures"
             >
           </div>
         {% endif %}
@@ -38,3 +38,33 @@
     </div>
   </div>
 </section>
+
+{% schema %}
+{
+  "name": "About Hydroxy",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Section description",
+      "default": "<p>description</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Section image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Hydroxy"
+    }
+  ]
+}
+{% endschema %}
