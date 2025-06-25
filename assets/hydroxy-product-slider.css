@@ -18,6 +18,7 @@
   .hydroxy-product-slider__wrapper {
     max-width: 45rem;
     gap: 2rem;
+    top: 11rem;
   }
 }
 
@@ -92,7 +93,13 @@
 
 @media screen and (min-width: 1480px) {
   .hydroxy-product-slider__thumbs {
-    width: initial;
+    width: 13rem;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .hydroxy-product-slider__thumbs {
+    width: 14rem;
   }
 }
 

@@ -665,10 +665,6 @@
     display: flex;
     justify-content: center;
     margin-top: initial;
-
-    .copyright__content a {
-      font-size: 1.8rem;
-    }
   }
 
   .footer__link-cta {
@@ -691,7 +687,7 @@
 
   .footer-block__details-content .list-menu__item--link,
   .copyright__content a {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .footer__bottom-hydroxy-btn.desktop-only {
