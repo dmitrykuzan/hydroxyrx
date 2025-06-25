@@ -263,11 +263,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   margin-top: 8rem;
 }
 
-@media screen and (min-width: 1023px) {
-  .section-melatonin {
-    margin-top: 12rem;
-  }
-}
 
 @media screen and (min-width: 1280px) {
   .section-melatonin {
