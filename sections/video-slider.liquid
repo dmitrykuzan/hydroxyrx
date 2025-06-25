@@ -31,7 +31,15 @@
           </div>
         {% endfor %}
       </div>
-      <a class="about-hydroxy__link btn btn-blue" href="{{ all_products['7-hydroxymitragynine'].url }}" style="margin-top: 3.5rem;"> Shop now </a>
+      {% if template == 'index' %}
+        <a
+          class="about-hydroxy__link btn btn-blue"
+          href="{{ all_products['7-hydroxymitragynine'].url }}"
+          style="margin-top: 3.5rem;"
+        >
+          Shop now
+        </a>
+      {% endif %}
     </div>
   </div>
 </section>
