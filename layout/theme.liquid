@@ -305,6 +305,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     >
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}  {% if template == 'index' %}padding-main-page{% endif %}">
@@ -387,5 +389,6 @@
     {% render 'subscribe-modal' %}
     <script src="{{ 'dynamic-adaptive.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'parallax-mouse.min.js' | asset_url }}" defer="defer"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer="defer"></script>
   </body>
 </html>

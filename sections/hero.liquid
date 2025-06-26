@@ -15,15 +15,22 @@
       <div class="hero__content">
         <div class="hero__text">
           <h1>
-            <span class="text">FEEL</span>
-            <span class="text"
-              >G <span class="smile scroll-trigger animate--slide-in">O</span>
-              <span class="smile scroll-trigger animate--slide-in">O</span>D</span
+            <span class="text" data-aos="zoom-in-up" data-aos-duration="1800">FEEL</span>
+            <span
+              class="text"
+              data-aos="zoom-in"
+              data-aos-duration="2400"
+              >G <span class="smile" data-aos="flip-up" data-aos-duration="3400">O</span>
+              <span class="smile" data-aos="flip-up" data-aos-duration="2800">O</span>D</span
             >
-            <span class="text scroll-trigger animate--slide-in">FOR REAL</span>
+            <span class="text " data-aos="zoom-out-up" data-aos-duration="2500">FOR REAL</span>
           </h1>
 
-          <div class="hero__middle-text ">
+          <div
+            class="hero__middle-text"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <h2 class="hero__title section-title">Discover Premium 7-0H</h2>
             <h3 class="hero__subtitle">HYDROXY<span>Rx</span></h3>
           </div>
@@ -31,7 +38,13 @@
           {% for block in section.blocks %}
             {% if block.type == 'product' and block.settings.product %}
               {% assign product = block.settings.product %}
-              <a class="hero__product-link btn btn-blue" href="{{ product.url }}">Shop now</a>
+              <a
+                class="hero__product-link btn btn-blue"
+                href="{{ product.url }}"
+                data-aos="fade-up"
+                data-aos-duration="2600"
+                >Shop now</a
+              >
             {% endif %}
           {% endfor %}
         </div>
@@ -183,5 +196,11 @@
 
       animate();
     });
+
+    AOS.init(
+      {
+        duration: 1200,
+      }
+    );
   });
 </script>
