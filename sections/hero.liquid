@@ -3,7 +3,7 @@
 <section class="hero">
   <div class="hero__bg">
     <img
-      src="{{ 'hydroxyrx-bg.png' | asset_url }}"
+      src="{{ 'hydroxyrx-bg.webp' | asset_url }}"
       width="1920"
       height="1080"
       loading="eager"
@@ -15,47 +15,90 @@
       <div class="hero__content">
         <div class="hero__text">
           <h1>
-            <span class="text" data-aos="zoom-in-up" data-aos-duration="1800">FEEL</span>
             <span
               class="text"
-              data-aos="zoom-in"
-              data-aos-duration="2400"
-              >G <span class="smile" data-aos="flip-up" data-aos-duration="3400">O</span>
-              <span class="smile" data-aos="flip-up" data-aos-duration="2800">O</span>D</span
+              data-aos="fade-down"
+              data-aos-easing="ease-in-out-sine"
+              data-aos-duration="600"
+              data-aos-delay="1000"
+              data-aos-once="true"
+              >FEEL</span
             >
-            <span class="text " data-aos="zoom-out-up" data-aos-duration="2500">FOR REAL</span>
+            <span
+              class="text"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out-sine"
+              data-aos-duration="600"
+              data-aos-delay="1000"
+              data-aos-once="true"
+              >G
+              <span
+                class="smile"
+                data-aos="flip-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="800"
+                data-aos-delay="1100"
+                data-aos-once="true"
+                >O</span
+              >
+              <span
+                class="smile"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="800"
+                data-aos-delay="1100"
+                data-aos-once="true"
+                >O</span
+              >D</span
+            >
+            <span
+              class="text text-small"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out-sine"
+              data-aos-duration="800"
+              data-aos-delay="2000"
+              data-aos-once="true"
+              >FOR REAL</span
+            >
           </h1>
 
           <div
-            class="hero__middle-text"
+            class="animation-wrapper"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-easing="ease-in-out-sine"
+            data-aos-duration="800"
+            data-aos-delay="3000"
+            data-aos-once="true"
           >
-            <h2 class="hero__title section-title">Discover Premium 7-0H</h2>
-            <h3 class="hero__subtitle">HYDROXY<span>Rx</span></h3>
-          </div>
+            <div
+              class="hero__middle-text"
+            >
+              <h2 class="hero__title section-title">Discover Premium 7-0H</h2>
+              <h3 class="hero__subtitle">HYDROXY<span>Rx</span></h3>
+            </div>
 
-          {% for block in section.blocks %}
-            {% if block.type == 'product' and block.settings.product %}
-              {% assign product = block.settings.product %}
-              <a
-                class="hero__product-link btn btn-blue"
-                href="{{ product.url }}"
-                data-aos="fade-up"
-                data-aos-duration="2600"
-                >Shop now</a
-              >
-            {% endif %}
-          {% endfor %}
+            {% for block in section.blocks %}
+              {% if block.type == 'product' and block.settings.product %}
+                {% assign product = block.settings.product %}
+                <a
+                  class="hero__product-link btn btn-blue"
+                  href="{{ product.url }}"
+                  >Shop now</a
+                >
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
 
-        <div class="hero__desktop-review "></div>
+        <div
+          class="hero__desktop-review"
+        ></div>
       </div>
 
       <div class="hero__image-wrapper">
         <div class="hero__image mobile">
           <img
-            src="{{ 'hydroxy-hero.png' | asset_url }}"
+            src="{{ 'hydroxy-hero-3.webp' | asset_url }}"
             width="840"
             height="840"
             loading="eager"
@@ -63,7 +106,14 @@
           >
         </div>
 
-        <div class="hero__image desktop">
+        <div
+          class="hero__image desktop"
+          data-aos="fade-left"
+          data-aos-easing="ease-in-out-sine"
+          data-aos-duration="800"
+          data-aos-delay="3000"
+          data-aos-once="true"
+        >
           <img
             class="hydroxy-hero-img-1"
             src="{{ 'hydroxy-hero-1.png' | asset_url }}"
@@ -82,7 +132,7 @@
           >
           <img
             class="hydroxy-hero-img-3"
-            src="{{ 'hydroxy-hero-3.png' | asset_url }}"
+            src="{{ 'hydroxy-hero-3.webp' | asset_url }}"
             width="470"
             height="504"
             loading="eager"
