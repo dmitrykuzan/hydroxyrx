@@ -105,6 +105,38 @@
       gap: 0.2rem;
     }
 
+
+
+    .text[data-aos="fade-down"] {
+      transform: translateY(-300px); 
+      opacity: 0;
+    }
+
+    .text[data-aos="fade-right"] {
+      transform: translateX(-300px); 
+      opacity: 0;
+    }
+
+    .text[data-aos="fade-up"] {
+      transform: translateY(300px); 
+      opacity: 0;
+    }
+
+    .aos-animate.text[data-aos="fade-down"] {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .aos-animate.text[data-aos="fade-right"] {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .aos-animate.text[data-aos="fade-up"] {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
     .smile {
       color: transparent;
       display: inline-block;
