@@ -12,6 +12,10 @@
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+
+  .swiper-pagination-bullet-active {
+    background: #379AC9;
+  }
 }
 
 .hydroxy-benefits-swiper {
@@ -44,14 +48,6 @@
   text-align: center;
 }
 
-.hydroxy-benefits__list {
-  /* display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  list-style: none;
-  margin: initial;
-  padding-left: initial; */
-}
 
 .hydroxy-benefits__item {
   display: flex;
@@ -116,11 +112,6 @@
 }
 
 @media screen and (min-width: 767px) {
-  .hydroxy-benefits__list {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem; */
-  }
 
   .hydroxy-benefits {
     margin-top: 12rem;
