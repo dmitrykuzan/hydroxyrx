@@ -19,25 +19,26 @@
           }
         }
       },
-      "block_order": ["product_BkBiiX"],
+      "block_order": [
+        "product_BkBiiX"
+      ],
       "settings": {}
     },
-    "about_hydroxy_eTPMJ6": {
-      "type": "about-hydroxy",
-      "settings": {
-        "title": "",
-        "description": "<p><strong>HydroxyRx</strong> is the world’s first premium brand dedicated to delivering safe, effective, and lab-verified 7-hydroxymitragynine products. <br/><br/>Unlike synthetic alternatives and the more common mitragynine, 7-hydroxymitragynine delivers powerful, targeted relief—naturally. Sourced from the kratom plant, this potent alkaloid promotes calm, focus, and well-being without harsh side effects. HydroxyRx formulates each dose with unmatched precision, offering a clean, effective solution trusted by those who value purity and performance.</p>",
-        "image": "shopify://shop_images/IMG_0652.webp"
-      }
-    },
-    "hydroxy_benefits_main_iRecWz": {
-      "type": "hydroxy-benefits-main",
-      "name": "Hydroxy Benefits Main",
+    "banner_hydroxy_iKbtw3": {
+      "type": "banner-hydroxy",
+      "name": "Banner Hydroxy",
       "settings": {}
     },
     "video_slider_6Fhz9q": {
       "type": "video-slider",
       "blocks": {
+        "video_slide_N9F9V8": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/f9dc30340e374657ba789ca655fe66af.mp4",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/video_2025-07-06_17-06-33_-_frame_at_0m0s.jpg?v=1751810927"
+          }
+        },
         "video_slide_Wdwb33": {
           "type": "video_slide",
           "settings": {
@@ -61,6 +62,7 @@
         }
       },
       "block_order": [
+        "video_slide_N9F9V8",
         "video_slide_Wdwb33",
         "video_slide_dTTEQU",
         "video_slide_A64TTj"
@@ -69,6 +71,15 @@
         "title": "Listen to what our customers say about HydroxyRx",
         "subtitle": "<p>We’ve helped <strong>20,000</strong>+ customers </p>"
       }
+    },
+    "hydroxy_benefits_main_iRecWz": {
+      "type": "hydroxy-benefits-main",
+      "name": "Hydroxy Benefits Main",
+      "settings": {}
+    },
+    "ticker_CECxQX": {
+      "type": "ticker",
+      "settings": {}
     },
     "faq_with_text_iz9ydH": {
       "type": "faq-with-text",
@@ -120,10 +131,13 @@
         "pdf_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/Doctors-Guide-To-Dosing-7OH-Safely.pdf?v=1748943807"
       }
     },
-    "banner_hydroxy_iKbtw3": {
-      "type": "banner-hydroxy",
-      "name": "Banner Hydroxy",
-      "settings": {}
+    "about_hydroxy_eTPMJ6": {
+      "type": "about-hydroxy",
+      "settings": {
+        "title": "",
+        "description": "<p><strong>HydroxyRx</strong> is the world’s first premium brand dedicated to delivering safe, effective, and lab-verified 7-hydroxymitragynine products. <br/><br/>Unlike synthetic alternatives and the more common mitragynine, 7-hydroxymitragynine delivers powerful, targeted relief—naturally. Sourced from the kratom plant, this potent alkaloid promotes calm, focus, and well-being without harsh side effects. HydroxyRx formulates each dose with unmatched precision, offering a clean, effective solution trusted by those who value purity and performance.</p>",
+        "image": "shopify://shop_images/IMG_0652.webp"
+      }
     },
     "featured_blog_whTpnF": {
       "type": "featured-blog",
@@ -143,10 +157,6 @@
         "padding_bottom": 100
       }
     },
-    "ticker_CECxQX": {
-      "type": "ticker",
-      "settings": {}
-    },
     "rich_text_HBKVhT": {
       "type": "rich-text",
       "blocks": {
@@ -164,7 +174,10 @@
           }
         }
       },
-      "block_order": ["heading_JQNiLT", "text_CXEAEV"],
+      "block_order": [
+        "heading_JQNiLT",
+        "text_CXEAEV"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -183,7 +196,6 @@
     "ticker_CECxQX",
     "faq_with_text_iz9ydH",
     "about_hydroxy_eTPMJ6",
-
     "featured_blog_whTpnF",
     "rich_text_HBKVhT"
   ]
