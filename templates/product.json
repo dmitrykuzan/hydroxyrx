@@ -75,6 +75,13 @@
     "video_slider_TTVpmQ": {
       "type": "video-slider",
       "blocks": {
+        "video_slide_TwnxmE": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/f9dc30340e374657ba789ca655fe66af.mp4",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0757/1859/0717/files/video_2025-07-06_17-06-33_-_frame_at_0m0s.jpg?v=1751810927"
+          }
+        },
         "video_slide_bWjMPm": {
           "type": "video_slide",
           "settings": {
@@ -98,6 +105,7 @@
         }
       },
       "block_order": [
+        "video_slide_TwnxmE",
         "video_slide_bWjMPm",
         "video_slide_ib9B6L",
         "video_slide_K4QMai"
